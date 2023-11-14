@@ -10,7 +10,7 @@ class Utilisateur
     private $mot_de_passe;
 
     /**
-     * Constructeur de la classe profil
+     * Constructeur de la classe utilisateur
      *
      * @param string $identifiant // L'identifiant de l'utilisateur
      * @param string $mot_de_passe // Le mot de passe de l'utilisateur

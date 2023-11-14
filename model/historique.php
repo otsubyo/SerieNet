@@ -10,7 +10,7 @@ class Historique
     private $recherche;
 
     /**
-     * Constructeur de la classe profil
+     * Constructeur de la classe historique
      *
      * @param string $id_profil // L'id du profil
      * @param string $recherche // L'historique de recherche
