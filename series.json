@@ -1,0 +1,1329 @@
+[
+    {
+        "name": "24",
+        "genre": [
+            "Action",
+            "Thriller"
+        ],
+        "etoiles": 4.5,
+        "synopsis": "Jack Bauer, agent de la Cellule Anti-Terroriste de Los Angeles, est appel\u00e9 \u00e0 prendre des mesures draconiennes pour prot\u00e9ger sa patrie. La s\u00e9rie suit en temps r\u00e9el (chaque saison dure 24 heures, chaque \u00e9pisode une heure) les journ\u00e9es de Jack Bauer, ses coll\u00e8gues, ses amis et ses ennemis, et les \u00e9v\u00e9nements qui ponctuent leur existence mouvement\u00e9e.",
+        "id": 1
+    },
+    {
+        "name": "90210",
+        "genre": [
+            "Drame",
+            "Teen"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Les Wilson, une famille de l'Iowa, emm\u00e9nagent \u00e0 Beverly Hills dans une luxueuse villa appartenant \u00e0 la grand-m\u00e8re des enfants, Tabitha. Le p\u00e8re, Harry, est le nouveau principal du lyc\u00e9e de Beverly Hills, le lyc\u00e9e West Beverly Hills. Ses deux enfants, Annie et Dixon, doivent alors quitter leur vie paisible pour s'installer dans ce quartier hupp\u00e9 de Los Angeles. Ils vont alors d\u00e9couvrir un monde nouveau, o\u00f9 tous les coups sont permis, et o\u00f9 l'argent et l'apparence r\u00e8gnent en ma\u00eetres.",
+        "id": 2
+    },
+    {
+        "name": "Alias",
+        "genre": [
+            "Action",
+            "Drame",
+            "Espionnage"
+        ],
+        "etoiles": 4,
+        "synopsis": "Sydney Bristow est une jeune \u00e9tudiante qui m\u00e8ne une double vie. Elle fait partie de la CIA, mais celle-ci lui fait croire qu'elle travaille pour une agence gouvernementale qui lutte contre le terrorisme, la SD-6. Elle s'aper\u00e7oit rapidement que la SD-6 n'est pas ce qu'elle pr\u00e9tend \u00eatre. Elle se fait alors engager par la CIA pour d\u00e9truire la SD-6 de l'int\u00e9rieur.",
+        "id": 3
+    },
+    {
+        "name": "Angel",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Surnaturel"
+        ],
+        "etoiles": 4,
+        "synopsis": "Angel, un vampire \u00e2g\u00e9 de plus de 240 ans, a connu une vie pass\u00e9e tourment\u00e9e. Se rendant compte que le mal qu'il a fait \u00e9tait incommensurable, il d\u00e9cide de se racheter une conduite et de devenir un chasseur de d\u00e9mons, afin de lutter contre les forces du mal \u00e0 Los Angeles. Pour mener \u00e0 bien sa mission, il est aid\u00e9 par Cordelia Chase, une ancienne connaissance, et Doyle, un demi-d\u00e9mon.",
+        "id": 4
+    },
+    {
+        "name": "Battlestar Galactica",
+        "genre": [
+            "Action",
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 4.5,
+        "synopsis": "La s\u00e9rie raconte le p\u00e9riple du dernier groupe de survivants humains \u00e0 la recherche d'une plan\u00e8te mythique appel\u00e9e la Terre. Ces derniers sont en effet pourchass\u00e9s par leurs cr\u00e9ations, les Cylons, des robots humano\u00efdes ayant pris l'apparence des humains, et qui ont depuis \u00e9volu\u00e9 pour ressembler \u00e0 leurs cr\u00e9ateurs.",
+        "id": 5
+    },
+    {
+        "name": "Better Off Ted",
+        "genre": [
+            "Com\u00e9die",
+            "Science-fiction"
+        ],
+        "etoiles": 4,
+        "synopsis": "Ted Crisp est le directeur de la recherche et d\u00e9veloppement chez Veridian Dynamics, une soci\u00e9t\u00e9 qui fait des recherches dans tous les domaines, allant de la robotique \u00e0 l'armement en passant par l'agriculture. Il est entour\u00e9 de ses coll\u00e8gues, Veronica Palmer, sa sup\u00e9rieure, Phil Mymen, Lem Hewitt et Linda Zwordling.",
+        "id": 6
+    },
+    {
+        "name": "Bionic Woman",
+        "genre": [
+            "Action",
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 2.5,
+        "id": 7
+    },
+    {
+        "name": "Blade",
+        "genre": [
+            "Action",
+            "Fantastique"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Blade est un \u00eatre mi-homme mi-vampire qui lutte contre les vampires. Aid\u00e9 de Whistler, son mentor, il tente de retrouver Deacon Frost, le vampire responsable de la mort de sa m\u00e8re et de sa transformation en vampire.",
+        "id": 8
+    },
+    {
+        "name": "Blood Ties",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Surnaturel"
+        ],
+        "etoiles": 3,
+        "synopsis": "Vicki Nelson est une ancienne polici\u00e8re devenue d\u00e9tective priv\u00e9e. Elle fait la connaissance d'Henry Fitzroy, un vampire de 450 ans, qui l'aide dans ses enqu\u00eates. Ils sont aid\u00e9s par Mike Celluci, un ancien partenaire de Vicki, qui est toujours amoureux d'elle.",
+        "id": 9
+    },
+    {
+        "name": "Bones",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 4,
+        "synopsis": "Le Dr Temperance Brennan est une anthropologue hautement qualifi\u00e9e qui travaille \u00e0 l'Institut Jeffersonian. En examinant les squelettes de personnes d\u00e9c\u00e9d\u00e9es, elle est capable d'en reconstituer la vie et les circonstances de la mort. De telles capacit\u00e9s n'\u00e9chappent pas au FBI qui fait appel \u00e0 ses services dans le cadre d'affaires criminelles lorsque les m\u00e9thodes traditionnelles d'identification des corps ne donnent rien. Temperance travaille en collaboration avec l'agent sp\u00e9cial Seeley Booth, ancien sniper de l'arm\u00e9e qui se m\u00e9fie de la science et des scientifiques.",
+        "id": 10
+    },
+    {
+        "name": "Breaking Bad",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Thriller"
+        ],
+        "etoiles": 5,
+        "synopsis": "Walter White, 50 ans, est professeur de chimie dans un lyc\u00e9e du Nouveau-Mexique. Pour subvenir aux besoins de Skyler, sa femme enceinte, et de Walt Junior, son fils handicap\u00e9, il est oblig\u00e9 de travailler doublement. Son quotidien d\u00e9j\u00e0 morose devient carr\u00e9ment noir lorsqu'il apprend qu'il est atteint d'un incurable cancer des poumons. Les m\u00e9decins ne lui donnent pas plus de deux ans \u00e0 vivre. Pour r\u00e9unir rapidement beaucoup d'argent afin de mettre sa famille \u00e0 l'abri, Walter ne voit plus qu'une solution : mettre ses connaissances en chimie \u00e0 profit pour fabriquer et vendre du crystal meth, une drogue de synth\u00e8se qui rapporte beaucoup. Il propose \u00e0 Jesse, un de ses anciens \u00e9l\u00e8ves devenu un petit dealer de seconde zone, de faire \u00e9quipe avec lui. Le duo improvis\u00e9 met en place un labo itin\u00e9rant dans un vieux camping-car. Cette association inattendue va les entra\u00eener dans une s\u00e9rie de p\u00e9rip\u00e9ties tant comiques que path\u00e9tiques.",
+        "id": 11
+    },
+    {
+        "name": "Buffy the Vampire Slayer",
+        "genre": [
+            "Action",
+            "Drame",
+            "Fantastique"
+        ],
+        "etoiles": 4.5,
+        "synopsis": "Buffy Summers aspire \u00e0 une vie simple et \u00e9panouie aupr\u00e8s de sa famille et de ses amis. Mais les d\u00e9mons qui r\u00f4dent \u00e0 Sunnydale lui rappellent sans cesse qu'elle doit faire face \u00e0 ses responsabilit\u00e9s de Tueuse. Entre deux devoirs, elle doit mener une lutte sans fin contre les forces du mal : vampires, d\u00e9mons et forces souterraines en tout genre.",
+        "id": 12
+    },
+    {
+        "name": "Burn Notice",
+        "genre": [
+            "Action",
+            "Aventure",
+            "Thriller"
+        ],
+        "etoiles": 4,
+        "synopsis": "Michael Westen, un agent secret, est soudainement mis \u00e0 pied. Il n'a plus ni travail, ni revenu, ni acc\u00e8s \u00e0 la liste des contacts de la CIA. Il se retrouve dans sa ville natale de Miami, en Floride, o\u00f9 il est surveill\u00e9 par l'agent qui l'a fait sortir. Sans savoir pourquoi il a \u00e9t\u00e9 mis \u00e0 pied, Michael aide ceux qui ont des probl\u00e8mes avec des criminels, des escrocs et des politiciens locaux. Tout en travaillant pour eux, il cherche \u00e0 savoir pourquoi il a \u00e9t\u00e9 mis \u00e0 pied et par qui.",
+        "id": 13
+    },
+    {
+        "name": "Californication",
+        "genre": [
+            "Com\u00e9die",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Hank Moody est romancier et s\u00e9par\u00e9 de la m\u00e8re de sa fille de 13 ans. Il est aussi accro aux femmes et aux drogues et ne peut s'emp\u00eacher de dire la v\u00e9rit\u00e9, tout le temps et \u00e0 tout le monde. Oui, Hank est auto-destructeur...",
+        "id": 14
+    },
+    {
+        "name": "Caprica",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3,
+        "synopsis": "Caprica se d\u00e9roule 58 ans avant la s\u00e9rie Battlestar Galactica. La s\u00e9rie raconte la cr\u00e9ation des premiers Cylons et la naissance de leur civilisation. Elle se concentre sur deux familles, les Graystone et les Adama, et leurs relations conflictuelles sur fond de science et de religion.",
+        "id": 15
+    },
+    {
+        "name": "Charmed",
+        "genre": [
+            "Drame",
+            "Fantastique"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Les trois s\u0153urs Halliwell d\u00e9couvrent qu'elles descendent d'une famille de sorci\u00e8res et doivent apprendre \u00e0 se servir de leurs pouvoirs magiques afin de lutter contre le Mal...",
+        "id": 16
+    },
+    {
+        "name": "Chuck",
+        "genre": [
+            "Action",
+            "Aventure",
+            "Com\u00e9die"
+        ],
+        "etoiles": 4,
+        "synopsis": "Chuck Bartowski, un as de l'informatique chez BuyMore, n'a plus toute sa t\u00eate. Mais c'est une bonne nouvelle. En effet, depuis qu'il a involontairement stock\u00e9 dans son cerveau des informations secr\u00e8tes du gouvernement, l'action, l'adr\u00e9naline ainsi qu'une superbe petite amie agent secret ont fait irruption dans sa vie. Il se retrouve d\u00e9sormais dans la position du geek ultime : un h\u00e9ros capable de t\u00e9l\u00e9charger dans son cerveau la base de donn\u00e9es secr\u00e8tes du gouvernement...",
+        "id": 17
+    },
+    {
+        "name": "Cold Case",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Lilly Rush est inspecteur \u00e0 la brigade criminelle de Philadelphie. La jeune femme, forte et d\u00e9termin\u00e9e, n'h\u00e9site pas \u00e0 utiliser ses charmes pour obtenir des informations et faire avancer ses enqu\u00eates. Elle a \u00e9galement un don pour comprendre les mobiles et les raisons qui poussent les criminels \u00e0 agir. Elle enqu\u00eate sur des affaires non r\u00e9solues en faisant appel aux derni\u00e8res avanc\u00e9es technologiques et scientifiques en mati\u00e8re d'investigation.",
+        "id": 18
+    },
+    {
+        "name": "Community",
+        "genre": [
+            "Com\u00e9die"
+        ],
+        "etoiles": 4,
+        "synopsis": "Jeff est avocat. Mais Jeff doit surtout retourner \u00e0 l'universit\u00e9 car son certificat a \u00e9t\u00e9 invalid\u00e9. Entre les femmes au foyer fra\u00eechement divorc\u00e9es et ceux qui reprennent les \u00e9tudes pour garder leur esprit actif, Jeff int\u00e8gre une bande de joyeux drilles qui d\u00e9couvre les joies de la vie sur le campus. Ils en apprennent plus sur eux-m\u00eames que sur les cours qu'ils suivent...",
+        "id": 19
+    },
+    {
+        "name": "Criminal Minds",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Thriller"
+        ],
+        "etoiles": 4,
+        "synopsis": "L'\u00e9quipe des profilers \u00e9tudie les comportements et les esprits tortur\u00e9s des criminels les plus dangereux du pays, afin d'anticiper les crimes d'un \u00e9ventuel tueur. Chaque membre de cette unit\u00e9 d'\u00e9lite a sa personnalit\u00e9, son histoire mais aussi sa sp\u00e9cialit\u00e9. Ils sont tous d\u00e9pendants les uns des autres et les r\u00e9sultats d\u00e9pendent aussi de cette compl\u00e9mentarit\u00e9.",
+        "id": 20
+    },
+    {
+        "name": "Cupid",
+        "genre": [
+            "Com\u00e9die",
+            "Drame",
+            "Romance"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Trevor Hale est un homme qui se dit \u00eatre Cupidon. Il est envoy\u00e9 sur Terre par Zeus pour r\u00e9unir 100 couples. S'il \u00e9choue, il sera condamn\u00e9 \u00e0 rester sur Terre pour l'\u00e9ternit\u00e9. Il est aid\u00e9 dans sa t\u00e2che par Claire Allen, une psychologue qui pense que Trevor est fou.",
+        "id": 21
+    },
+    {
+        "name": "Daybreak",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Science-fiction"
+        ],
+        "etoiles": 3,
+        "synopsis": "Le d\u00e9tective Brett Hopper est accus\u00e9 du meurtre de l'assistant du procureur Alberto Garza. Il se retrouve dans une situation inextricable : il est accus\u00e9 d'un meurtre qu'il n'a pas commis, il est poursuivi par des tueurs et il est coinc\u00e9 dans une boucle temporelle qui le ram\u00e8ne toujours au m\u00eame moment de la journ\u00e9e, le moment du meurtre. Il va devoir trouver le moyen de prouver son innocence et de sortir de cette boucle temporelle.",
+        "id": 22
+    },
+    {
+        "name": "Demons",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Surnaturel"
+        ],
+        "etoiles": 3,
+        "synopsis": "Luke Rutherford est un adolescent de 16 ans comme les autres, jusqu'au jour o\u00f9 il d\u00e9couvre qu'il est le descendant d'un chasseur de d\u00e9mons. Il est alors recrut\u00e9 par Rupert Galvin, un homme myst\u00e9rieux qui l'aide \u00e0 combattre les forces du mal. Il est aid\u00e9 dans sa t\u00e2che par Ruby, une jeune femme qui a des pouvoirs magiques.",
+        "id": 23
+    },
+    {
+        "name": "Desperate Housewives",
+        "genre": [
+            "Com\u00e9die dramatique",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Wisteria Lane est un lieu paisible o\u00f9 les habitants semblent mener une vie heureuse... en apparence seulement ! Car en y regardant de plus pr\u00e8s, on d\u00e9couvre bien vite, dans l'intimit\u00e9 de chacun, que le bonheur n'est pas toujours au rendez-vous. Et peu \u00e0 peu, les secrets remontent in\u00e9vitablement \u00e0 la surface, risquant de faire voler en \u00e9clat le vernis lisse de leur tranquille existence...",
+        "id": 24
+    },
+    {
+        "name": "Dexter",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Thriller"
+        ],
+        "etoiles": 4.5,
+        "synopsis": "Brillant expert scientifique du service m\u00e9dico-l\u00e9gal de la police de Miami, Dexter Morgan est sp\u00e9cialis\u00e9 dans l'analyse de pr\u00e9l\u00e8vements sanguins. Mais Dexter cache un terrible secret : c'est \u00e9galement un tueur en s\u00e9rie ! Un serial killer pas comme les autres, avec sa propre vision de la justice.",
+        "id": 25
+    },
+    {
+        "name": "Dirt",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 3,
+        "synopsis": "Lucy Spiller est la r\u00e9dactrice en chef du magazine Dirt, un magazine \u00e0 scandales. Elle est pr\u00eate \u00e0 tout pour obtenir des informations croustillantes sur les c\u00e9l\u00e9brit\u00e9s. Elle est aid\u00e9e dans sa t\u00e2che par Don Konkey, son meilleur ami et photographe, et par Willa McPherson, une jeune journaliste.",
+        "id": 26
+    },
+    {
+        "name": "Dirty Sexy Money",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 3,
+        "synopsis": "Nick George, un avocat id\u00e9aliste, est engag\u00e9 par Tripp Darling pour \u00eatre l'avocat de la famille Darling, l'une des plus riches de New York. Il va alors d\u00e9couvrir que la vie de cette famille est remplie de scandales, de secrets et de trahisons.",
+        "id": 27
+    },
+    {
+        "name": "Doctor Who",
+        "genre": [
+            "Aventure",
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 4,
+        "synopsis": "Les aventures du Docteur, un extraterrestre, un Seigneur du Temps originaire de la plan\u00e8te Gallifrey, qui voyage \u00e0 travers le temps et l'espace \u00e0 l'aide d'un vaisseau spatial, le TARDIS, qui, pour mieux s'adapter \u00e0 l'environnement, a l'apparence d'une cabine t\u00e9l\u00e9phonique. Le Docteur voyage en compagnie d'une jeune fille. Ensemble, ils font de nombreuses rencontres sur les diverses plan\u00e8tes qu'ils explorent.",
+        "id": 28
+    },
+    {
+        "name": "Dollhouse",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Echo est une doll (poup\u00e9e en anglais). Elle fait partie d'un groupe de personnes, les Actives, qui sont programm\u00e9es pour accomplir diff\u00e9rentes missions. Apr\u00e8s chaque mission, leur m\u00e9moire est effac\u00e9e, et elles retournent au sein de l'organisation nomm\u00e9e Dollhouse. L\u00e0, elles sont soign\u00e9es, reconditionn\u00e9es et attendent la mission suivante...",
+        "id": 29
+    },
+    {
+        "name": "Eleventh Hour",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Le docteur Jacob Hood est un brillant scientifique qui travaille pour le gouvernement am\u00e9ricain. Il est charg\u00e9 d'enqu\u00eater sur des crimes qui semblent avoir \u00e9t\u00e9 commis par des personnes ayant utilis\u00e9 des technologies avanc\u00e9es.",
+        "id": 30
+    },
+    {
+        "name": "Entourage",
+        "genre": [
+            "Com\u00e9die",
+            "Drame"
+        ],
+        "etoiles": 4,
+        "synopsis": "Jeune et s\u00e9duisant acteur, Vincent Chase rencontre tr\u00e8s vite le succ\u00e8s et devient une star adul\u00e9e \u00e0 Hollywood. Soucieux de ne pas oublier ses origines, Vince s'entoure de ses amis d'enfance originaires comme lui du Queens, l'un des quartiers pauvres de New York. Avec eux, il partage cette nouvelle aventure dans ce monde de strass et de paillettes.",
+        "id": 31
+    },
+    {
+        "name": "Eureka",
+        "genre": [
+            "Com\u00e9die",
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 4,
+        "synopsis": "Dans la petite ville d'Eureka, la population locale cache un lourd secret : des scientifiques venus du monde entier y vivent en secret, travaillant sur des projets top-secret et des exp\u00e9riences qui d\u00e9passent l'entendement. Mais un agent du gouvernement va venir troubler cette tranquillit\u00e9.",
+        "id": 32
+    },
+    {
+        "name": "Extras",
+        "genre": [
+            "Com\u00e9die",
+            "Drame"
+        ],
+        "etoiles": 4,
+        "synopsis": "Andy Millman est un acteur rat\u00e9 qui ne d\u00e9croche que des r\u00f4les de figurants. Il est entour\u00e9 de Maggie Jacobs, son amie d'enfance, et de Darren Lamb, son agent. Il va croiser la route de nombreuses c\u00e9l\u00e9brit\u00e9s qui vont lui donner des conseils pour r\u00e9ussir.",
+        "id": 33
+    },
+    {
+        "name": "Fear Itself",
+        "genre": [
+            "Drame",
+            "Horreur",
+            "Thriller"
+        ],
+        "etoiles": 3,
+        "synopsis": "Chaque \u00e9pisode est une histoire ind\u00e9pendante, avec de nouveaux personnages et une nouvelle intrigue. La s\u00e9rie est bas\u00e9e sur les peurs et les phobies.",
+        "id": 34
+    },
+    {
+        "name": "FlashForward",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Le 6 octobre 2009, \u00e0 11 h 00, la population mondiale est victime d'un mal \u00e9trange : pendant 2 minutes et 17 secondes, chaque personne est confront\u00e9e \u00e0 une vision du futur qui change \u00e0 jamais sa vie... et son destin. Un agent du FBI, Mark Benford, essaye d\u00e9sesp\u00e9r\u00e9ment de comprendre ce qui a pu provoquer cet \u00e9trange ph\u00e9nom\u00e8ne, tandis que son co\u00e9quipier, Demetri Noh, lutte contre le temps pour emp\u00eacher un meurtre qui pourrait bien \u00eatre li\u00e9 \u00e0 ce myst\u00e8re. Au m\u00eame moment, une jeune femme, Olivia Benford, chirurgien, d\u00e9couvre qu'elle a un r\u00f4le \u00e0 jouer dans tout cela. Et si ce ph\u00e9nom\u00e8ne n'\u00e9tait pas uniquement le fait du hasard ?",
+        "id": 35
+    },
+    {
+        "name": "Flashpoint",
+        "genre": [
+            "Action",
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Le SRU (Strategic Response Unit) est une force de police canadienne sp\u00e9cialis\u00e9e dans les op\u00e9rations paramilitaires. Ses membres sont entra\u00een\u00e9s pour intervenir dans des situations extr\u00eames comme les prises d'otages, les d\u00e9samor\u00e7ages de bombes, les d\u00e9mant\u00e8lements de gangs, etc. Ils sont aussi form\u00e9s pour n\u00e9gocier avec les preneurs d'otages et les suspects. Ils sont souvent amen\u00e9s \u00e0 faire usage de leurs armes, mais uniquement en dernier recours.",
+        "id": 36
+    },
+    {
+        "name": "Flight of the Conchords",
+        "genre": [
+            "Com\u00e9die",
+            "Musical"
+        ],
+        "etoiles": 4,
+        "synopsis": "Les aventures de Bret et Jemaine, deux N\u00e9o-Z\u00e9landais, membres d'un groupe de folk-rock, qui tentent de percer \u00e0 New York.",
+        "id": 37
+    },
+    {
+        "name": "Friday Night Lights",
+        "genre": [
+            "Drame",
+            "Sport"
+        ],
+        "etoiles": 4,
+        "synopsis": "Dans une petite ville du Texas o\u00f9 le football est roi, les \u00e9tats d'\u00e2me des joueurs et de leur entourage sont mis en lumi\u00e8re.",
+        "id": 38
+    },
+    {
+        "name": "Friends",
+        "genre": [
+            "Com\u00e9die",
+            "Romance"
+        ],
+        "etoiles": 4,
+        "synopsis": "Les p\u00e9rip\u00e9ties de 6 jeunes newyorkais li\u00e9s par une profonde amiti\u00e9. Entre amour, travail, famille, ils partagent leurs bonheurs et leurs soucis au Central Perk, leur caf\u00e9 favori...",
+        "id": 39
+    },
+    {
+        "name": "Fringe",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 4,
+        "synopsis": "Olivia Dunham, agent du FBI, le Dr Walter Bishop, un g\u00e9nie extravaguant et son fils Peter enqu\u00eatent sur des ph\u00e9nom\u00e8nes \u00e9tranges. Leurs d\u00e9couvertes les am\u00e8neront \u00e0 mener une lutte sans merci pour la sauvegarde de notre univers face \u00e0 la menace d'un univers parall\u00e8le.",
+        "id": 40
+    },
+    {
+        "name": "Futurama",
+        "genre": [
+            "Animation",
+            "Com\u00e9die",
+            "Science-fiction"
+        ],
+        "etoiles": 4,
+        "synopsis": "En l'an 3000, la Terre est ravag\u00e9e par une guerre nucl\u00e9aire. La pollution a rendu l'air irrespirable et les humains se sont r\u00e9fugi\u00e9s dans des villes souterraines. Seul un robot, Bender, survit dans les d\u00e9combres. Un jour, il rencontre Fry, un humain de l'an 2000 qui a \u00e9t\u00e9 accidentellement cryog\u00e9nis\u00e9 pendant mille ans. Ils deviennent amis et Fry rejoint l'\u00e9quipage de Planet Express, une entreprise de livraison spatiale. Il y rencontre Leela, une extraterrestre cyclope, et Farnsworth, le grand-p\u00e8re de Leela et le propri\u00e9taire de Planet Express. Ensemble, ils vont vivre de nombreuses aventures dans l'espace.",
+        "id": 41
+    },
+    {
+        "name": "Gary Unmarried",
+        "genre": [
+            "Com\u00e9die"
+        ],
+        "etoiles": 3,
+        "synopsis": "Gary Brooks est un homme divorc\u00e9 qui tente de rester ami avec sa femme Allison, avec qui il a eu deux enfants, Louise et Tom. Il est \u00e9galement entour\u00e9 par son ami d'enfance, Curtis, et par son fr\u00e8re, Mitch.",
+        "id": 42
+    },
+    {
+        "name": "Ghost Whisperer",
+        "genre": [
+            "Drame",
+            "Fantastique"
+        ],
+        "etoiles": 3,
+        "synopsis": "Melinda Gordon a un don que sa grand-m\u00e8re avant elle avait \u00e9galement : elle peut communiquer avec l'esprit des morts. Elle a d\u00e9sormais aussi une mission : relayer les messages des disparus afin de soulager, voire de sauver, les vivants et permettre ainsi aux esprits lib\u00e9r\u00e9s de passer de l'autre c\u00f4t\u00e9... Elle est aid\u00e9e dans sa t\u00e2che par son ami et associ\u00e9 Delia Banks, ainsi que par son \u00e9poux Jim, qui accepte tant bien que mal que sa femme ait ce don un peu particulier.",
+        "id": 43
+    },
+    {
+        "name": "Gossy Girl",
+        "genre": [
+            "Drame",
+            "Romance"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "La vie de la jeunesse dor\u00e9e des \u00e9l\u00e8ves de deux \u00e9coles priv\u00e9es new-yorkaises, vue \u00e0 travers les yeux ironiques d'une myst\u00e9rieuse \"bloggeuse\" surnomm\u00e9e Gossip Girl. Entre amour et amiti\u00e9, chacun tente de tirer son \u00e9pingle du jeu, mais rien n'est jamais simple derri\u00e8re des apparences parfaites...",
+        "id": 44
+    },
+    {
+        "name": "Greek",
+        "genre": [
+            "Com\u00e9die",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Casey Cartwright est une \u00e9tudiante brillante qui vient d'\u00eatre accept\u00e9e \u00e0 la fac de son choix. Elle y rejoint sa soeur, Frannie, qui est membre de la sororit\u00e9 des Zeta Beta Zeta. Casey d\u00e9cide de ne pas suivre les traces de sa soeur et rejoint la sororit\u00e9 rivale, les Omega Chi Delta. Elle va alors d\u00e9couvrir un monde nouveau, o\u00f9 les f\u00eates et les fraternit\u00e9s sont les ma\u00eetres mots.",
+        "id": 45
+    },
+    {
+        "name": "Grey's Anatomy",
+        "genre": [
+            "Com\u00e9die dramatique",
+            "M\u00e9dical"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Meredith Grey, fille d'un chirurgien tr\u00e8s r\u00e9put\u00e9, commence son internat de premi\u00e8re ann\u00e9e en m\u00e9decine chirurgicale dans un h\u00f4pital de Seattle. La jeune femme s'efforce de maintenir de bonnes relations avec ses camarades internes, mais dans ce m\u00e9tier difficile la comp\u00e9tition fait rage.",
+        "id": 46
+    },
+    {
+        "name": "Heroes",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 4,
+        "synopsis": "Un groupe de personnes ordinaires d\u00e9couvre qu'ils poss\u00e8dent des pouvoirs extraordinaires. La vie de ces gens n'en sera que plus \u00e9trange et excitante, mais aussi plus dangereuse. Ils vont \u00eatre amen\u00e9s \u00e0 se croiser, se chercher et s'affronter, sans conna\u00eetre les r\u00e9percussions de leurs actes...",
+        "id": 47
+    },
+    {
+        "name": "House",
+        "genre": [
+            "Com\u00e9die dramatique",
+            "M\u00e9dical"
+        ],
+        "etoiles": 4,
+        "synopsis": "Le Dr Greg House est un m\u00e9decin rev\u00eache qui ne fait confiance \u00e0 personne, et encore moins \u00e0 ses patients. Irr\u00e9v\u00e9rencieux et controvers\u00e9, il n'en serait que plus heureux s'il pouvait ne pas adresser la parole \u00e0 ses patients. Mais House est un brillant m\u00e9decin. Et avec son \u00e9quipe d'experts, il est pr\u00eat \u00e0 tout pour r\u00e9soudre les cas m\u00e9dicaux les plus myst\u00e9rieux et sauver des vies.",
+        "id": 48
+    },
+    {
+        "name": "How I Met Your Mother",
+        "genre": [
+            "Com\u00e9die",
+            "Romance"
+        ],
+        "etoiles": 4,
+        "synopsis": "Ted se rem\u00e9more ses jeunes ann\u00e9es, lorsqu'il \u00e9tait encore c\u00e9libataire. Il raconte \u00e0 ses enfants avec nostalgie ses moments d'\u00e9garements et de troubles, ses rencontres et ses recherches effr\u00e9n\u00e9es du Grand Amour et les fac\u00e9ties de sa bande d'amis...",
+        "id": 49
+    },
+    {
+        "name": "In Treatment",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 4,
+        "synopsis": "Paul Weston est un psychoth\u00e9rapeute qui re\u00e7oit chaque semaine dans son cabinet un patient diff\u00e9rent, pour une s\u00e9ance de 50 minutes. Il a \u00e9galement sa propre th\u00e9rapeute, Gina, \u00e0 qui il rend visite une fois par semaine, le vendredi en fin d'apr\u00e8s-midi.",
+        "id": 50
+    },
+    {
+        "name": "Invasion",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3,
+        "synopsis": "Dans la petite ville d'Homestead, en Floride, les habitants sont victimes d'une \u00e9trange temp\u00eate qui va changer leur vie \u00e0 jamais. Le sh\u00e9rif Tom Underlay est le premier \u00e0 s'apercevoir que quelque chose ne tourne pas rond. Il va alors enqu\u00eater sur ce ph\u00e9nom\u00e8ne et d\u00e9couvrir que des extraterrestres sont en train de prendre le contr\u00f4le de la ville.",
+        "id": 51
+    },
+    {
+        "name": "Jake",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Science-fiction"
+        ],
+        "etoiles": 3,
+        "synopsis": "Jake Foley est un jeune technicien informatique qui travaille pour le gouvernement am\u00e9ricain. Il est victime d'un accident qui va changer sa vie \u00e0 jamais. Il va alors d\u00e9velopper des capacit\u00e9s physiques et mentales hors du commun. Il va \u00eatre recrut\u00e9 par la NSA, qui va l'aider \u00e0 contr\u00f4ler ses nouveaux pouvoirs.",
+        "id": 52
+    },
+    {
+        "name": "Jekyll",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Surnaturel"
+        ],
+        "etoiles": 4,
+        "synopsis": "Tom Jackman est un homme ordinaire. Il a une femme aimante et deux enfants. Mais il a aussi un secret : il a une double personnalit\u00e9. Il est \u00e9galement Mr Hyde, un homme violent et sans scrupules. Tom va alors faire appel \u00e0 une psychologue, Katherine Reimer, pour l'aider \u00e0 contr\u00f4ler ses pulsions.",
+        "id": 53
+    },
+    {
+        "name": "Jericho",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Une petite ville am\u00e9ricaine doit faire face \u00e0 un accident nucl\u00e9aire qui a d\u00e9truit les \u00c9tats-Unis. Les habitants vont devoir apprendre \u00e0 survivre dans un monde o\u00f9 les ressources sont limit\u00e9es et o\u00f9 les menaces sont nombreuses.",
+        "id": 54
+    },
+    {
+        "name": "John from Cincinnati",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3,
+        "synopsis": "John est un \u00e9tranger qui arrive \u00e0 Imperial Beach, une ville de Californie. Il va bouleverser la vie de la famille Yost, qui est compos\u00e9e de trois g\u00e9n\u00e9rations de surfeurs.",
+        "id": 55
+    },
+    {
+        "name": "Journeyman",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Dan Vasser est un journaliste qui voyage dans le temps. Il se retrouve alors dans le pass\u00e9, o\u00f9 il doit r\u00e9soudre des probl\u00e8mes qui ont des r\u00e9percussions dans le pr\u00e9sent.",
+        "id": 56
+    },
+    {
+        "name": "Knight Rider",
+        "genre": [
+            "Action",
+            "Aventure",
+            "Science-fiction"
+        ],
+        "etoiles": 2.5,
+        "synopsis": "Mike Traceur est le fils cach\u00e9 de Michael Knight, le pilote de K2000. Il est recrut\u00e9 par la Fondation Knight pour remplacer son p\u00e8re. Il est aid\u00e9 dans sa t\u00e2che par Sarah Graiman, la fille de Charles Graiman, le cr\u00e9ateur de K2000.",
+        "id": 57
+    },
+    {
+        "name": "Kyle XY",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Un adolescent se r\u00e9veille, nu et amn\u00e9sique, dans une for\u00eat de l'\u00c9tat de Washington. Il s'appelle Kyle. Il ne sait ni qui il est, ni d'o\u00f9 il vient. \u00c0 son poignet, un bracelet \u00e9lectronique lui permet de communiquer avec une myst\u00e9rieuse entit\u00e9. Il est recueilli par la famille Trager, qui d\u00e9cide de l'h\u00e9berger. Kyle va alors devoir s'adapter \u00e0 sa nouvelle vie.",
+        "id": 58
+    },
+    {
+        "name": "Legend of the Seeker",
+        "genre": [
+            "Action",
+            "Aventure",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Les aventures de Richard Cypher, un jeune guide forestier, qui d\u00e9couvre qu'il est investi d'une noble et ancestrale destin\u00e9e : celle de devenir un h\u00e9ros et un d\u00e9fenseur des terres inviol\u00e9es contre l'oppression et la tyrannie.",
+        "id": 59
+    },
+    {
+        "name": "Leverage",
+        "genre": [
+            "Action",
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Nate Ford est un ancien enqu\u00eateur sp\u00e9cialis\u00e9 dans les assurances. Il a perdu son fils durant une intervention en banlieue. Il d\u00e9cide alors de r\u00e9unir une \u00e9quipe de voleurs et d'escrocs pour r\u00e9cup\u00e9rer l'argent qu'il a perdu injustement. Il va alors devenir un justicier qui utilise ses talents pour aider les personnes qui sont victimes d'abus de la part de riches hommes d'affaires.",
+        "id": 60
+    },
+    {
+        "name": "Lie to Me",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Thriller"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Le Dr Cal Lightman est un scientifique sp\u00e9cialis\u00e9 dans la d\u00e9tection du mensonge. Qui que vous soyez, il sait si vous dites ou non la v\u00e9rit\u00e9...",
+        "id": 61
+    },
+    {
+        "name": "Life",
+        "genre": [
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Charlie Crews est un inspecteur de police qui a \u00e9t\u00e9 emprisonn\u00e9 \u00e0 tort pendant 12 ans pour un triple meurtre. Il a \u00e9t\u00e9 innocent\u00e9 par l'ADN et il est lib\u00e9r\u00e9 de prison. Il retourne alors \u00e0 son travail et il est d\u00e9termin\u00e9 \u00e0 d\u00e9couvrir qui l'a pi\u00e9g\u00e9 et pourquoi.",
+        "id": 62
+    },
+    {
+        "name": "Lost",
+        "genre": [
+            "Aventure",
+            "Drame",
+            "Fantastique"
+        ],
+        "etoiles": 4.5,
+        "synopsis": "Apr\u00e8s le crash de leur avion sur une \u00eele perdue, les survivants doivent apprendre \u00e0 cohabiter et survivre dans cet environnement hostile. Bien vite, ils se rendent compte qu'une menace semble planer sur l'\u00eele...",
+        "id": 63
+    },
+    {
+        "name": "Madmen",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 4,
+        "synopsis": "Dans le New York des ann\u00e9es 60, Don Draper est l'un des grands noms de la pub. Ma\u00eetre manipulateur, il compte dans son entourage des ennemis qui attendent sa chute.",
+        "id": 64
+    },
+    {
+        "name": "Masters of Sci-Fi",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3,
+        "synopsis": "Chaque \u00e9pisode est une histoire ind\u00e9pendante, avec de nouveaux personnages et une nouvelle intrigue. La s\u00e9rie est bas\u00e9e sur des nouvelles de science-fiction.",
+        "id": 65
+    },
+    {
+        "name": "Medium",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Fantastique"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Allison Dubois est m\u00e9dium. Elle peut voir et entendre les morts. Elle peut \u00e9galement voir le futur et communiquer avec les d\u00e9funts. Elle met ses dons au service de la justice et aide la police \u00e0 r\u00e9soudre des crimes.",
+        "id": 66
+    },
+    {
+        "name": "Melrose Place",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 3,
+        "synopsis": "La vie de jeunes adultes, qui vivent dans un immeuble de Melrose Place, un quartier de Los Angeles.",
+        "id": 67
+    },
+    {
+        "name": "Mental",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 3,
+        "synopsis": "Jack Gallagher est un psychiatre qui travaille dans un h\u00f4pital de Los Angeles. Il est sp\u00e9cialis\u00e9 dans les maladies mentales. Il est aid\u00e9 dans sa t\u00e2che par Nora Skoff, une psychiatre qui est \u00e9galement son ex-femme.",
+        "id": 68
+    },
+    {
+        "name": "Merlin",
+        "genre": [
+            "Aventure",
+            "Drame",
+            "Fantastique"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Merlin, un jeune homme \u00e0 la d\u00e9couverte de ses pouvoirs magiques, arrive \u00e0 Camelot o\u00f9 il va vivre aupr\u00e8s du prince Arthur, dont il va devenir le plus proche ami. Il va d\u00e9couvrir que sa destin\u00e9e est \u00e9troitement li\u00e9e \u00e0 celle du royaume.",
+        "id": 69
+    },
+    {
+        "name": "Moonlight",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Surnaturel"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Mick St. John est un vampire qui vit \u00e0 Los Angeles. Il poss\u00e8de un don exceptionnel : il est capable de lire les pens\u00e9es des gens. Il utilise ses pouvoirs pour aider les personnes qui ont besoin de lui. Il est aid\u00e9 dans sa t\u00e2che par son ami Josef Kostan, un autre vampire.",
+        "id": 70
+    },
+    {
+        "name": "My Name Is Earl",
+        "genre": [
+            "Com\u00e9die"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Earl Hickey est un petit escroc minable qui vit de menus larcins et d'arnaques en tout genre. Un jour, il gagne 100 000 dollars \u00e0 un jeu de grattage. Mais, au m\u00eame moment, il se fait renverser par une voiture. Alors qu'il est \u00e0 l'h\u00f4pital, il d\u00e9couvre la s\u00e9rie \"Last Call with Carson Daly\". Dans cette \u00e9mission, Carson Daly parle du karma et de la loi du retour. Earl d\u00e9cide alors de r\u00e9parer ses erreurs pass\u00e9es et de faire le bien autour de lui.",
+        "id": 71
+    },
+    {
+        "name": "NCIS",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "\u00c0 la t\u00eate de cette \u00e9quipe du NCIS, qui op\u00e8re en dehors de la cha\u00eene de commandement militaire, l'agent Special Leroy Jethro Gibbs, un enqu\u00eateur qualifi\u00e9 dont les qualit\u00e9s sont d'\u00eatre intelligent, solide et pr\u00eat \u00e0 contourner les r\u00e8gles pour faire le travail. Travaillant sous les ordres de Gibbs, on retrouve l'agent Anthony DiNozzo, l'agent Abby Sciuto et le Dr Donald \"Ducky\" Mallard.",
+        "id": 72
+    },
+    {
+        "name": "NCIS: Los Angeles",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Les enqu\u00eates de l'\u00e9quipe du NCIS de Los Angeles sp\u00e9cialis\u00e9e dans les missions d'infiltration...",
+        "id": 73
+    },
+    {
+        "name": "Nip/Tuck",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Sean McNamara et Christian Troy sont deux chirurgiens esth\u00e9tiques \u00e2g\u00e9s d'une quarantaine d'ann\u00e9es. Amis de longue date, ils poss\u00e8dent une clinique priv\u00e9e \u00e0 Miami dans laquelle ils re\u00e7oivent bon nombre de patients, qu'ils soient issus de la jet-set ou non. Sean est un homme rang\u00e9, mari\u00e9 depuis de nombreuses ann\u00e9es avec Julia, qui est \u00e9galement chirurgien esth\u00e9tique. Ils ont deux enfants, Matt et Annie. Christian, quant \u00e0 lui, est un c\u00e9libataire endurci, qui encha\u00eene les conqu\u00eates f\u00e9minines. Il est \u00e9galement le p\u00e8re d'un petit Wilber, n\u00e9 d'une aventure d'un soir avec Gina, une femme qui travaille dans leur clinique. Sean et Christian sont \u00e9galement associ\u00e9s avec une autre chirurgienne, Liz Cruz, qui est une ancienne alcoolique. Ils sont \u00e9galement aid\u00e9s par Julia, qui est \u00e9galement chirurgienne esth\u00e9tique, et par Matt, leur fils, qui est stagiaire dans la clinique.",
+        "id": 74
+    },
+    {
+        "name": "One Tree Hill",
+        "genre": [
+            "Drame",
+            "Romance"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Lucas et Nathan, deux demi-fr\u00e8res que tout s\u00e9pare, se retrouvent rivaux non seulement sur le terrain de leur \u00e9quipe de basket mais aussi dans le coeur d'une fille. Ils ne le savent pas encore, mais cette rencontre changera leur vie...",
+        "id": 75
+    },
+    {
+        "name": "Oz",
+        "genre": [
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Oz est la prison exp\u00e9rimentale de haute s\u00e9curit\u00e9 pour hommes d'Oswald. Emerald City est le surnom de la cellule exp\u00e9rimentale de haute technologie de la prison. Les \u00e9meutes et les meurtres sont devenus monnaie courante dans cette prison. Pour faire face \u00e0 cette situation, le directeur de la prison, Tim McManus, a cr\u00e9\u00e9 un quartier exp\u00e9rimental, Emerald City, o\u00f9 les prisonniers ont plus de libert\u00e9 et de responsabilit\u00e9s. Les d\u00e9tenus sont r\u00e9partis en diff\u00e9rents groupes, les Aryens, les musulmans, les latinos, les chr\u00e9tiens, les italiens, les irlandais, les homosexuels...",
+        "id": 76
+    },
+    {
+        "name": "Painkiller Jane",
+        "genre": [
+            "Action",
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 2.5,
+        "synopsis": "Jane Vasco est une agent de la DEA qui a la capacit\u00e9 de se r\u00e9g\u00e9n\u00e9rer rapidement. Elle est recrut\u00e9e par une organisation secr\u00e8te qui lutte contre les menaces paranormales. Elle va alors devoir utiliser ses pouvoirs pour combattre les criminels.",
+        "id": 77
+    },
+    {
+        "name": "Primeval",
+        "genre": [
+            "Action",
+            "Aventure",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Nick Cutter et son \u00e9quipe doivent faire face \u00e0 des cr\u00e9atures pr\u00e9historiques qui ont travers\u00e9 les anomalies temporelles et qui se retrouvent dans notre \u00e9poque.",
+        "id": 78
+    },
+    {
+        "name": "Prison Break",
+        "genre": [
+            "Action",
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 4,
+        "synopsis": "Michael Scofield s'engage dans une v\u00e9ritable lutte contre la montre : son fr\u00e8re Lincoln est dans le couloir de la mort, en attente de son ex\u00e9cution. Persuad\u00e9 de son innocence mais \u00e0 court de solutions, Michael d\u00e9cide de se faire incarc\u00e9rer \u00e0 son tour dans le p\u00e9nitencier d'\u00e9tat de Fox River pour organiser leur \u00e9vasion...",
+        "id": 79
+    },
+    {
+        "name": "Private Practice",
+        "genre": [
+            "Com\u00e9die dramatique",
+            "M\u00e9dical"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Le Dr Addison Montgomery quitte Seattle Grace pour Los Angeles afin de rejoindre une clinique priv\u00e9e nomm\u00e9e Oceanside Wellness Group. Elle y retrouve d'anciens amis et coll\u00e8gues de Seattle, mais aussi son ex-mari, le Dr Derek Shepherd, qui est venu lui demander de revenir \u00e0 Seattle Grace. Addison va alors devoir faire un choix entre sa vie professionnelle et sa vie personnelle.",
+        "id": 80
+    },
+    {
+        "name": "Psych",
+        "genre": [
+            "Com\u00e9die",
+            "Crime",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Shawn Spencer a toujours eu un don pour remarquer les d\u00e9tails les plus insignifiants. C'est gr\u00e2ce \u00e0 ce talent qu'il a r\u00e9ussi \u00e0 convaincre la police qu'il poss\u00e9dait des pouvoirs psychiques. Mais lorsqu'il r\u00e9v\u00e8le qu'il utilise ce don pour r\u00e9soudre des crimes, il devient alors un consultant tr\u00e8s convoit\u00e9 par le chef de la police.",
+        "id": 81
+    },
+    {
+        "name": "Pushing Daisies",
+        "genre": [
+            "Com\u00e9die",
+            "Drame",
+            "Fantastique"
+        ],
+        "etoiles": 4,
+        "synopsis": "Ned poss\u00e8de un don unique. Il peut, gr\u00e2ce \u00e0 un simple contact, ramener les morts \u00e0 la vie. Il en a fait l'exp\u00e9rience avec son chien Digby, mort \u00e9cras\u00e9 par un camion. Mais lorsqu'il ram\u00e8ne \u00e0 la vie son amour d'enfance, Chuck, il d\u00e9clenche une s\u00e9rie d'\u00e9v\u00e9nements qui vont avoir des cons\u00e9quences d\u00e9sastreuses.",
+        "id": 82
+    },
+    {
+        "name": "Raines",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 3,
+        "synopsis": "Michael Raines est un d\u00e9tective de la police de Los Angeles. Il est aid\u00e9 dans ses enqu\u00eates par des fant\u00f4mes qui lui donnent des indices.",
+        "id": 83
+    },
+    {
+        "name": "Reaper",
+        "genre": [
+            "Com\u00e9die",
+            "Drame",
+            "Fantastique"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Sam Oliver est un jeune homme qui vit une vie tranquille avec ses amis et sa petite amie. Mais le jour de son 21e anniversaire, ses parents lui r\u00e9v\u00e8lent qu'ils ont vendu son \u00e2me au diable avant sa naissance. Sam doit alors devenir un chasseur d'\u00e2mes pour le diable.",
+        "id": 84
+    },
+    {
+        "name": "Robin Hood",
+        "genre": [
+            "Action",
+            "Aventure",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Robin de Locksley rentre chez lui apr\u00e8s avoir pass\u00e9 cinq ans en croisade. Il d\u00e9couvre que son domaine est en ruines et que son p\u00e8re a \u00e9t\u00e9 assassin\u00e9. Il d\u00e9cide alors de se venger et de r\u00e9tablir la justice en combattant les injustices et la corruption qui r\u00e8gnent dans le comt\u00e9 de Nottingham.",
+        "id": 85
+    },
+    {
+        "name": "Rome",
+        "genre": [
+            "Action",
+            "Drame",
+            "Historique"
+        ],
+        "etoiles": 4,
+        "synopsis": "En 52 avant J\u00e9sus-Christ, Jules C\u00e9sar ach\u00e8ve la conqu\u00eate de la Gaule et pr\u00e9pare son retour \u00e0 Rome. Il est accompagn\u00e9 de son arm\u00e9e et de ses fid\u00e8les soldats, Titus Pullo et Lucius Vorenus. Mais la mort de Pomp\u00e9e va changer la donne. C\u00e9sar devient le ma\u00eetre de Rome et il est nomm\u00e9 dictateur \u00e0 vie. Il va alors devoir faire face \u00e0 de nombreux complots et trahisons.",
+        "id": 86
+    },
+    {
+        "name": "Samantha Who?",
+        "genre": [
+            "Com\u00e9die",
+            "Romance"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Samantha Newly est une jeune femme qui a perdu la m\u00e9moire \u00e0 la suite d'un accident de la route. Elle va alors d\u00e9couvrir qu'elle \u00e9tait une femme \u00e9go\u00efste et sans scrupules. Elle va alors essayer de changer et de devenir une meilleure personne.",
+        "id": 87
+    },
+    {
+        "name": "Sanctuary",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Science-fiction"
+        ],
+        "etoiles": 3,
+        "synopsis": "Le Dr Helen Magnus dirige une \u00e9quipe qui a pour mission de prot\u00e9ger les cr\u00e9atures qui vivent dans la clandestinit\u00e9. Elle recueille ces cr\u00e9atures dans un sanctuaire situ\u00e9 \u00e0 Londres.",
+        "id": 88
+    },
+    {
+        "name": "Scrubs",
+        "genre": [
+            "Com\u00e9die",
+            "M\u00e9dical"
+        ],
+        "etoiles": 4,
+        "synopsis": "J.D. est un jeune m\u00e9decin qui d\u00e9bute sa carri\u00e8re dans l'h\u00f4pital du Sacr\u00e9-Coeur. Il va d\u00e9couvrir que la vie n'est pas facile tous les jours, surtout quand on est entour\u00e9 d'infirmi\u00e8res peu compr\u00e9hensives, de m\u00e9decins imbus de leur personne et de patients plus fous les uns que les autres.",
+        "id": 89
+    },
+    {
+        "name": "Sex and the City",
+        "genre": [
+            "Com\u00e9die dramatique",
+            "Romance"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Quatre amies trentenaires vivent \u00e0 New York et partagent leurs exp\u00e9riences et leurs vies amoureuses ou professionnelles.",
+        "id": 90
+    },
+    {
+        "name": "Six Feet Under",
+        "genre": [
+            "Com\u00e9die dramatique"
+        ],
+        "etoiles": 4,
+        "synopsis": "La famille Fisher tient une entreprise de pompes fun\u00e8bres \u00e0 Los Angeles. La mort fait partie de leur quotidien. Les membres de cette famille vont devoir apprendre \u00e0 vivre avec leurs peurs et leurs n\u00e9vroses.",
+        "id": 91
+    },
+    {
+        "name": "Skins",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Tony est un jeune homme de 17 ans qui est tr\u00e8s populaire aupr\u00e8s de ses amis. Il est entour\u00e9 par sa petite amie Michelle, sa meilleure amie Sid, son ami Anwar, son amie Jal, son ami Chris et sa petite amie Jal. Mais sa vie va \u00eatre boulevers\u00e9e par un accident qui va le plonger dans le coma. Ses amis vont alors devoir apprendre \u00e0 vivre sans lui.",
+        "id": 92
+    },
+    {
+        "name": "Smallville",
+        "genre": [
+            "Aventure",
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Dans une petite bourgade qui a connu une pluie de m\u00e9t\u00e9orites quelques ann\u00e9es plus t\u00f4t, le jeune Clark Kent est \u00e9lev\u00e9 par une famille de fermiers. Contraint de cacher ses pouvoirs exceptionnels, il va apprendre \u00e0 les utiliser pour aller au secours de son prochain.",
+        "id": 93
+    },
+    {
+        "name": "Sons of Anarchy",
+        "genre": [
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 4,
+        "synopsis": "L'action se d\u00e9roule \u00e0 Charming, ville fictive du comt\u00e9 de San Joaquin en Californie. Une lutte de territoires entre dealers et trafiquants d'armes vient perturber les affaires d'un club de bikers (Motorcycle Club, ou MC en anglais). Ce club, nomm\u00e9 , Sons of Anarchy Motorcycle Club Redwood Original, couramment abr\u00e9g\u00e9 en SAMCRO, fait r\u00e9gner l'ordre dans Charming. Clay Morrow, pr\u00e9sident de SAMCRO et patron du garage Teller-Morrow, ainsi que Jax Teller, vice-pr\u00e9sident, m\u00e8nent le club. Leurs relations sont cependant mises \u00e0 l'\u00e9preuve lorsque Jax, jeune p\u00e8re c\u00e9libataire en qu\u00eate de r\u00e9demption, et son beau-p\u00e8re Clay, dont l'ambition d\u00e9mesur\u00e9e pour le club commence \u00e0 d\u00e9passer les limites, se retrouvent face \u00e0 face.",
+        "id": 94
+    },
+    {
+        "name": "South Park",
+        "genre": [
+            "Animation",
+            "Com\u00e9die"
+        ],
+        "etoiles": 4,
+        "synopsis": "La petite ville de South Park dans le Colorado est le th\u00e9\u00e2tre des aventures de Cartman, Stan, Kyle et Kenny, quatre enfants qui ont un langage un peu... d\u00e9cal\u00e9",
+        "id": 95
+    },
+    {
+        "name": "Spaced",
+        "genre": [
+            "Com\u00e9die"
+        ],
+        "etoiles": 4,
+        "synopsis": "Tim Bisley et Daisy Steiner sont deux jeunes londoniens qui se rencontrent dans un caf\u00e9 alors qu'ils sont \u00e0 la recherche d'un appartement. Ils d\u00e9cident alors de se faire passer pour un couple afin de pouvoir louer un appartement. Ils vont alors devoir apprendre \u00e0 vivre ensemble.",
+        "id": 96
+    },
+    {
+        "name": "Stargate Atlantis",
+        "genre": [
+            "Action",
+            "Aventure",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Une \u00e9quipe d'explorateurs, qui regroupe des scientifiques et des militaires, voyage \u00e0 bord d'un vaisseau spatial, l'USS Atlantis, \u00e0 la d\u00e9couverte de mondes inconnus.",
+        "id": 97
+    },
+    {
+        "name": "Stargate SG-1",
+        "genre": [
+            "Action",
+            "Aventure",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Une \u00e9quipe d'explorateurs, qui regroupe des scientifiques et des militaires, voyage \u00e0 bord d'un vaisseau spatial, l'USS SG-1, \u00e0 la d\u00e9couverte de mondes inconnus.",
+        "id": 98
+    },
+    {
+        "name": "Stargate Universe",
+        "genre": [
+            "Action",
+            "Aventure",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Une \u00e9quipe d'explorateurs, qui regroupe des scientifiques et des militaires, voyage \u00e0 bord d'un vaisseau spatial, l'USS Destiny, \u00e0 la d\u00e9couverte de mondes inconnus.",
+        "id": 99
+    },
+    {
+        "name": "Supernatural",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Horreur"
+        ],
+        "etoiles": 4,
+        "synopsis": "Deux fr\u00e8res parcourent les \u00c9tats-Unis pour traquer les forces du Mal. Ils esp\u00e8rent par la m\u00eame occasion mettre la main sur le d\u00e9mon responsable de la mort de leur m\u00e8re, vingt ans plus t\u00f4t.",
+        "id": 100
+    },
+    {
+        "name": "Swingtown",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 3,
+        "synopsis": "Susan et Bruce Miller emm\u00e9nagent dans une nouvelle maison avec leurs deux enfants. Ils vont alors d\u00e9couvrir que leurs voisins ont un mode de vie tr\u00e8s diff\u00e9rent du leur. Ils vont alors devoir faire face \u00e0 leurs propres d\u00e9sirs et \u00e0 leurs propres fantasmes.",
+        "id": 101
+    },
+    {
+        "name": "The 4400",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Le 3 juillet 1946, 4400 personnes ont \u00e9t\u00e9 enlev\u00e9es par des extraterrestres. Ces personnes r\u00e9apparaissent un jour toutes ensemble dans un parc. Elles ne semblent pas avoir vieilli et ne se souviennent pas de ce qui leur est arriv\u00e9. Le gouvernement d\u00e9cide de les placer dans un centre afin de les \u00e9tudier. Mais, au fur et \u00e0 mesure, ils vont d\u00e9couvrir que ces personnes ont d\u00e9velopp\u00e9 des capacit\u00e9s extraordinaires.",
+        "id": 102
+    },
+    {
+        "name": "The Big Bang Theory",
+        "genre": [
+            "Com\u00e9die"
+        ],
+        "etoiles": 4,
+        "synopsis": "Leonard et Sheldon pourraient vous dire tout ce que vous voudriez savoir \u00e0 propos de la physique quantique. Mais ils seraient bien incapables de vous expliquer quoi que ce soit sur la vie \"r\u00e9elle\", le quotidien ou les relations humaines... Mais tout va changer avec l'arriv\u00e9e de la superbe Penny, leur voisine.",
+        "id": 103
+    },
+    {
+        "name": "The Black Donnellys",
+        "genre": [
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Quatre fr\u00e8res irlandais et leur famille vivent dans le quartier de Hell's Kitchen \u00e0 New York. Ils sont pr\u00eats \u00e0 tout pour prot\u00e9ger leur famille et leur quartier.",
+        "id": 104
+    },
+    {
+        "name": "The Kill Point",
+        "genre": [
+            "Action",
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 3,
+        "synopsis": "Un groupe de v\u00e9t\u00e9rans de la guerre en Irak d\u00e9cide de braquer une banque. Mais, ils vont se retrouver pris au pi\u00e8ge dans la banque avec des otages. Ils vont alors devoir faire face \u00e0 la police et au FBI.",
+        "id": 105
+    },
+    {
+        "name": "The Lost Room",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Joe Miller est un policier qui enqu\u00eate sur la disparition de sa fille. Il d\u00e9couvre alors l'existence d'une chambre d'h\u00f4tel qui est un portail vers un autre monde. Il va alors devoir faire face \u00e0 des personnes qui veulent s'emparer de cette chambre.",
+        "id": 106
+    },
+    {
+        "name": "The Mentalist",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Patrick Jane est un mentaliste qui travaille pour le California Bureau of Investigation (CBI). Gr\u00e2ce \u00e0 ses dons d'observation, il va aider la police \u00e0 r\u00e9soudre des crimes.",
+        "id": 107
+    },
+    {
+        "name": "The Nine",
+        "genre": [
+            "Drame",
+            "Thriller"
+        ],
+        "etoiles": 3,
+        "synopsis": "Neuf personnes sont prises en otage dans une banque. Elles vont rester ensemble pendant 52 heures. Mais, apr\u00e8s leur lib\u00e9ration, elles vont devoir faire face aux cons\u00e9quences de cette prise d'otages.",
+        "id": 108
+    },
+    {
+        "name": "The O.C.",
+        "genre": [
+            "Drame",
+            "Romance"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Ryan Atwood est un adolescent de 16 ans qui vit dans un quartier pauvre de Chino \u00e0 Los Angeles. Il est arr\u00eat\u00e9 alors qu'il tentait de voler une voiture. Il est alors plac\u00e9 dans un centre de d\u00e9tention pour mineurs. Sandy Cohen, un avocat qui habite \u00e0 Newport Beach, d\u00e9cide de le sortir de l\u00e0. Il l'h\u00e9berge alors chez lui. Ryan va alors d\u00e9couvrir le monde de la haute soci\u00e9t\u00e9 de Newport Beach.",
+        "id": 109
+    },
+    {
+        "name": "The Pretender",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Jarod est un g\u00e9nie qui a \u00e9t\u00e9 enlev\u00e9 quand il \u00e9tait enfant. Il a \u00e9t\u00e9 \u00e9lev\u00e9 dans un centre de recherches appel\u00e9 Le Centre. Il a la capacit\u00e9 de devenir n'importe qui et de r\u00e9soudre n'importe quel probl\u00e8me. Mais, un jour, il d\u00e9cide de s'enfuir. Il va alors utiliser ses capacit\u00e9s pour aider les personnes qui ont besoin de lui.",
+        "id": 110
+    },
+    {
+        "name": "The Riches",
+        "genre": [
+            "Drame"
+        ],
+        "etoiles": 3,
+        "synopsis": "Wayne et Dahlia Malloy sont des escrocs qui vivent dans une caravane avec leurs trois enfants. Ils d\u00e9cident de voler l'identit\u00e9 d'un couple de riches qui est mort dans un accident de voiture. Ils vont alors devoir s'adapter \u00e0 leur nouvelle vie.",
+        "id": 111
+    },
+    {
+        "name": "The Sarah Connor Chronicles",
+        "genre": [
+            "Action",
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Sarah Connor est une m\u00e8re c\u00e9libataire qui \u00e9l\u00e8ve son fils John. Elle va devoir faire face \u00e0 un agent du FBI, James Ellison, qui est persuad\u00e9 que John est un dangereux criminel. Mais, elle va \u00e9galement devoir prot\u00e9ger son fils qui est destin\u00e9 \u00e0 devenir le leader de la r\u00e9sistance humaine contre les machines.",
+        "id": 112
+    },
+    {
+        "name": "The Shield",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Thriller"
+        ],
+        "etoiles": 4,
+        "synopsis": "Vic Mackey est un policier qui dirige une unit\u00e9 sp\u00e9ciale, la Strike Team, qui lutte contre les gangs de Los Angeles. Mais, il est pr\u00eat \u00e0 tout pour arriver \u00e0 ses fins, m\u00eame \u00e0 utiliser des m\u00e9thodes peu orthodoxes.",
+        "id": 113
+    },
+    {
+        "name": "The Sopranos",
+        "genre": [
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 4,
+        "synopsis": "Tony Soprano est un chef de la mafia qui est suivi par une psychiatre, le Dr Jennifer Melfi. Il va alors lui raconter sa vie de criminel et sa vie de famille.",
+        "id": 114
+    },
+    {
+        "name": "The Tudors",
+        "genre": [
+            "Drame",
+            "Historique"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "La vie du jeune Henry VIII, ses amours, ses intrigues et ses relations avec les puissances \u00e9trang\u00e8res, le tout dans l'Angleterre du XVI\u00e8me si\u00e8cle.",
+        "id": 115
+    },
+    {
+        "name": "The Vampire Diaries",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Horreur"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Quatre mois apr\u00e8s le tragique accident de voiture qui a tu\u00e9 leurs parents, Elena Gilbert, 17 ans, et son fr\u00e8re Jeremy, 15 ans, essaient encore de s'adapter \u00e0 cette nouvelle r\u00e9alit\u00e9. Belle et populaire, l'adolescente poursuit ses \u00e9tudes au Mystic Falls High en s'effor\u00e7ant de masquer son chagrin. Elena est imm\u00e9diatement fascin\u00e9e par Stefan et Damon Salvatore, deux fr\u00e8res que tout oppose. Elle ne tarde pas \u00e0 d\u00e9couvrir qu'ils sont en fait des vampires...",
+        "id": 116
+    },
+    {
+        "name": "The Wire",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Thriller"
+        ],
+        "etoiles": 4,
+        "synopsis": "Baltimore, dans le Maryland, est une ville rong\u00e9e par le crime, les r\u00e8glements de compte, la drogue et la corruption. Une unit\u00e9 sp\u00e9ciale de la police tente de r\u00e9duire le taux de criminalit\u00e9.",
+        "id": 117
+    },
+    {
+        "name": "Torchwood",
+        "genre": [
+            "Action",
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Le capitaine Jack Harkness est un ancien agent du 51e si\u00e8cle qui voyage \u00e0 travers le temps et l'espace \u00e0 bord de son vaisseau, le TARDIS. Il est \u00e0 la t\u00eate d'une organisation secr\u00e8te, Torchwood, qui lutte contre les aliens qui menacent la Terre.",
+        "id": 118
+    },
+    {
+        "name": "Traveler",
+        "genre": [
+            "Action",
+            "Drame",
+            "Thriller"
+        ],
+        "etoiles": 3,
+        "synopsis": "Jay Burchell et Tyler Fog sont deux \u00e9tudiants qui partent en voyage \u00e0 New York. Mais, ils sont accus\u00e9s d'avoir fait exploser un mus\u00e9e. Ils vont alors devoir prouver leur innocence et d\u00e9couvrir qui les a pi\u00e9g\u00e9s.",
+        "id": 119
+    },
+    {
+        "name": "Trucalling",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Thriller"
+        ],
+        "etoiles": 3,
+        "synopsis": "Tru Davies est une jeune \u00e9tudiante en m\u00e9decine qui travaille \u00e0 mi-temps dans une morgue. Elle va d\u00e9couvrir qu'elle a le pouvoir de revenir un jour en arri\u00e8re pour sauver des personnes qui sont mortes.",
+        "id": 120
+    },
+    {
+        "name": "TrueBlood",
+        "genre": [
+            "Drame",
+            "Fantastique",
+            "Horreur"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Ayant trouv\u00e9 un substitut pour se nourrir sans tuer (du sang synth\u00e9tique), les vampires vivent d\u00e9sormais parmi les humains. Sookie, une serveuse capable de lire dans les esprits, tombe sous le charme de Bill, un myst\u00e9rieux vampire. Une rencontre qui bouleverse la vie de la jeune femme...",
+        "id": 121
+    },
+    {
+        "name": "Ugly Betty",
+        "genre": [
+            "Com\u00e9die dramatique"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Betty Suarez n'est pas sp\u00e9cialement belle, mais elle est douce, intelligente et travaille dur. Dans un monde r\u00e9gi par les apparences, ses qualit\u00e9s sont invisibles. Pourtant, le Pr\u00e9sident de Meade Publications l'engage pour devenir l'assistante de son fils, Daniel, r\u00e9cemment promu \u00e0 la t\u00eate d'un prestigieux magazine de mode. Il esp\u00e8re ainsi obliger son futur successeur \u00e0 s'int\u00e9resser davantage \u00e0 son travail plut\u00f4t qu'\u00e0 la gent f\u00e9minine. Si au d\u00e9but leur association est explosive, ils vont bient\u00f4t devenir une paire redoutable... ",
+        "id": 122
+    },
+    {
+        "name": "V",
+        "genre": [
+            "Drame",
+            "Science-fiction"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Des extraterrestres, qui ressemblent \u00e0 des humains, arrivent sur Terre. Ils pr\u00e9tendent \u00eatre venus en paix, mais ils ont en r\u00e9alit\u00e9 des intentions bien diff\u00e9rentes.",
+        "id": 123
+    },
+    {
+        "name": "Veronica Mars",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 4,
+        "synopsis": "Veronica Mars est une lyc\u00e9enne de 17 ans qui habite \u00e0 Neptune, une ville californienne qui a \u00e9t\u00e9 frapp\u00e9e par un tragique \u00e9v\u00e9nement. En effet, la meilleure amie de Veronica, Lilly Kane, a \u00e9t\u00e9 assassin\u00e9e. Son p\u00e8re, Keith Mars, qui \u00e9tait le sh\u00e9rif de la ville, a accus\u00e9 Jake Kane, le p\u00e8re de Lilly, d'\u00eatre le meurtrier. Mais, il a \u00e9t\u00e9 destitu\u00e9 de ses fonctions. Veronica va alors devoir faire face \u00e0 la disparition de sa m\u00e8re et \u00e0 la trahison de ses amis.",
+        "id": 124
+    },
+    {
+        "name": "Weeds",
+        "genre": [
+            "Com\u00e9die",
+            "Crime",
+            "Drame"
+        ],
+        "etoiles": 3.5,
+        "synopsis": "Nancy Botwin est une m\u00e8re c\u00e9libataire qui vend de la marijuana. Elle va devoir faire face \u00e0 la mort de son mari et \u00e0 la d\u00e9couverte de son activit\u00e9 par son voisinage.",
+        "id": 125
+    },
+    {
+        "name": "Whitechapel",
+        "genre": [
+            "Crime",
+            "Drame",
+            "Myst\u00e8re"
+        ],
+        "etoiles": 3,
+        "synopsis": "L'inspecteur Joseph Chandler est un policier qui a une m\u00e9thode peu orthodoxe. Il est charg\u00e9 de r\u00e9soudre une s\u00e9rie de meurtres qui ont eu lieu dans le quartier de Whitechapel \u00e0 Londres. Il va alors faire \u00e9quipe avec Edward Buchan, un historien qui est sp\u00e9cialis\u00e9 dans les crimes du XIXe si\u00e8cle.",
+        "id": 126
+    },
+    {
+        "name": "Women's Murder Club",
+        "genre": [
+            "Drame",
+            "Thriller"
+        ],
+        "etoiles": 2.5,
+        "synopsis": "Autour de l'inspecteur Lindsay Boxer, se cr\u00e9e une \u00e9quipe de femmes, un club, r\u00e9unissant une journaliste, un m\u00e9decin l\u00e9giste, une officier de police et une assistante du procureur, afin de r\u00e9soudre les diff\u00e9rents crimes commis dans la ville de San Francisco.",
+        "id": 127
+    },
+    {
+        "name": "xfiles",
+        "genre": [
+            "Horreur",
+            "Surnaturel",
+            "Drame",
+            "Com\u00e9die"
+        ],
+        "etoiles": 4.3,
+        "synopsis": "Deux agents du FBI sont charg\u00e9s d'enqu\u00eater sur les dossiers non r\u00e9solus, appel\u00e9s \"X-files\" la plupart du temps des affaires o\u00f9 le paranormal entre en jeu. L'agent Fox Mulder, malgr\u00e9 le scepticisme de sa co-\u00e9quipi\u00e8re Dana Scully, tente de prouver sa th\u00e8se du complot gouvernement/extra-terrestres...",
+        "id": 128
+    }
+]
