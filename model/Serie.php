@@ -51,7 +51,7 @@ class Serie
      * Renvoie le genre de la série
      * @return string
      */
-    public function getGenre(): string
+    public function getGenre(): array
     {
         return $this->genre;
     }

@@ -2,6 +2,8 @@
 namespace model\dao\requests;
 
 require_once(__DIR__ . "/../../dao/Database.php");
+
+use model\Genre;
 use model\Serie;
 use PDO;
 use function libs\deliverResponse;
@@ -21,7 +23,7 @@ class SerieRequest
 
     public function getGenresSerie($id): array
     {
-        $sql = "SELECT genre.genre_name
+        $sql = "SELECT genre.id,genre.genre_name
                 FROM serie
                          JOIN serie_genre ON serie.id = serie_genre.serie_id
                          JOIN genre ON serie_genre.genre_id = genre.id
@@ -32,7 +34,11 @@ class SerieRequest
         if (!$data) {
             die("ERROR 404 : Données introuvable !");
         }
-        return $data;
+        $genres = array();
+        foreach ($data as $row) {
+            $genres[] = new Genre($row['id'],$row['genre_name']);
+        }
+        return $genres;
     }
 
     public function getSerie($id): Serie
@@ -69,6 +75,26 @@ class SerieRequest
             die('Erreur lors du décodage de la réponse JSON : ' . json_last_error_msg());
         }
 
+        $series = array();
+        foreach ($data as $serie) {
+            $series[] = $this->getSerie($serie['id']);
+        }
+        return $series;
+    }
+
+    public function getSerieByGenre($genre): array
+    {
+        $sql = "SELECT serie.id, serie.name, serie.etoiles, serie.synopsis
+                FROM serie
+                         JOIN serie_genre ON serie.id = serie_genre.serie_id
+                         JOIN genre ON serie_genre.genre_id = genre.id
+                WHERE genre.genre_name = :genre";
+        $stmt = $this->linkpdo->prepare($sql);
+        $stmt->execute(array(':genre' => $genre));
+        (array) $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if (!$data) {
+            die("ERROR 404 : Données introuvable !");
+        }
         $series = array();
         foreach ($data as $serie) {
             $series[] = $this->getSerie($serie['id']);

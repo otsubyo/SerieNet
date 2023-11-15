@@ -11,8 +11,6 @@ B
 model/dao/test.php,d\f\df5baef6f493dcb555c831f84f168de4089b3a4b
 G
 controller/jwt-auth.php,3\4\3449aeb09a7e930ae69ac49336a0742aed337106
-N
-controller/functions-utils.php,f\9\f92edb7eaf903e2a587cf423c327eea4f67bb5fc
 H
 libs/functions-utils.php,d\d\dd5522b8d2afae87b97654616eb6c4ce35a7b74d
 B
@@ -25,8 +23,6 @@ E
 model/Utilisateur.php,e\c\ec01c4a5f57a11410d4fdadfb5696f235230132d
 ?
 model/Serie.php,5\5\5520f97c1f62ff6a81dc6241d7aec3ccfce4b228
-U
-%model/dao/requests/ArticleRequest.php,8\b\8b794e35258d10ca96b488a33180dd464a7ff52c
 S
 #model/dao/requests/SerieRequest.php,3\7\37953d91091fcb476cecaef66e3034869f913419
 A
@@ -54,8 +50,6 @@ Q.idea/sonarlint/securityhotspotstore/3/4/3449aeb09a7e930ae69ac49336a0742aed3371
 Å
 Q.idea/sonarlint/securityhotspotstore/0/c/0c46be2328c91066577a7a417f74788a36d3a6ce,b\d\bdbfe52bca7f5ca57f2c1cb198ce4b21a4cc5966
 Å
-Q.idea/sonarlint/securityhotspotstore/f/9/f92edb7eaf903e2a587cf423c327eea4f67bb5fc,e\6\e629d2cbac4115eee889c2b51620b3639389ca10
-Å
 Q.idea/sonarlint/securityhotspotstore/a/0/a0dd340c1163d404977c81f7205f5ed79bb17eb7,4\5\45c109850663f30e406feb8ba4a04a6575e8bf50
 Å
 Q.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d,1\0\10a03f31c4dce92cb371e761ce9429428bb6c176
@@ -77,3 +71,5 @@ Q.idea/sonarlint/securityhotspotstore/e/c/ec01c4a5f57a11410d4fdadfb5696f23523013
 Q.idea/sonarlint/securityhotspotstore/a/9/a91ada032b7c9075c55bd6866530c01136b6c3ed,2\a\2a0330c2957c031d6d039cb3f3b48bb37c208e03
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+C
+view/html/home.html,7\2\722178e89e359d19f85cf1ed1c1d5ce13ea661be
