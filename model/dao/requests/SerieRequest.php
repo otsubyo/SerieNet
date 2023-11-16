@@ -54,7 +54,7 @@ class SerieRequest
         return new Serie($data['id'], $data['nom'], $genres, $data['etoiles'], $data['synopsis']);
     }
 
-    public function getSeries($id, $lang = "VF"): array
+    public function getSeriesSearch($id, $lang = "VF"): array
     {
         // Construire l'URL de l'API Flask
         $apiUrl = "http://localhost:5000/search/$id/$lang";

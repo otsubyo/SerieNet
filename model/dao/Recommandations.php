@@ -30,7 +30,7 @@ class Recommandations
         $genresREC = array();
         foreach ($historique as $h) {
             $search = $h->getTermeRecherche();
-            $series = $serieRequest->getSeries($search);
+            $series = $serieRequest->getSeriesSearch($search);
             foreach ($series as $s) {
                 $genres = $serieRequest->getGenresSerie($s->getIdentifiant());
                 foreach ($genres as $g) {
