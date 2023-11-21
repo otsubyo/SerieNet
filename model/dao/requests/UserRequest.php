@@ -12,7 +12,7 @@ use PDO;
  */
 class UserRequest
 {
-    private $linkpdo;
+    private PDO $linkpdo;
 
     public function __construct()
     {

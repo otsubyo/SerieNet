@@ -62,3 +62,4 @@ function getJWTUser(string $bearer_token, UserRequest $userRequest): Utilisateur
     $payload = decode_jwt($jwt);
     return $userRequest->getUser($payload['username']);
 }
+

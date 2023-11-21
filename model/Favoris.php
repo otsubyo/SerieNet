@@ -7,8 +7,8 @@ namespace model;
 
 class Favoris
 {
-    private $id_profil;
-    private $id_serie;
+    private string $id_profil;
+    private string $id_serie;
 
     /**
      * Constructeur de la classe favoris

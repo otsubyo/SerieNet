@@ -6,8 +6,8 @@ namespace model;
  */
 class Genre
 {
-    private $id;
-    private $nom;
+    private string $id;
+    private string $nom;
 
     /**
      * Constructeur de la classe Genre
@@ -36,6 +36,15 @@ class Genre
     public function getNom(): string
     {
         return $this->nom;
+    }
+
+    /**
+     * Renvoie une représentation textuelle du genre
+     * @return string
+     */
+    public function toString(): string
+    {
+        return "Genre : " . $this->nom;
     }
 
 }

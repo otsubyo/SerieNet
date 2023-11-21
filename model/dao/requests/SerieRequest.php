@@ -2,11 +2,12 @@
 namespace model\dao\requests;
 
 require_once(__DIR__ . "/../../dao/Database.php");
+require_once(__DIR__ . "/../../Serie.php");
+require_once(__DIR__ . "/../../Genre.php");
 
 use model\Genre;
 use model\Serie;
 use PDO;
-use function libs\deliverResponse;
 use model\dao\Database;
 
 /**
@@ -14,14 +15,14 @@ use model\dao\Database;
  */
 class SerieRequest
 {
-    private $linkpdo;
+    private PDO $linkpdo;
 
     public function __construct()
     {
         $this->linkpdo = Database::getInstance('root', "9wms351v")->getConnection();
     }
 
-    public function getGenresSerie($id): array
+    public function getGenresSerie(string $serieID): array
     {
         $sql = "SELECT genre.id,genre.genre_name
                 FROM serie
@@ -29,8 +30,8 @@ class SerieRequest
                          JOIN genre ON serie_genre.genre_id = genre.id
                 WHERE serie.id = :id";
         $stmt = $this->linkpdo->prepare($sql);
-        $stmt->execute(array(':id' => $id));
-        (array) $data = $stmt->fetch(PDO::FETCH_ASSOC);
+        $stmt->execute(array(':id' => $serieID));
+        (array) $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (!$data) {
             die("ERROR 404 : Données introuvable !");
         }
@@ -51,13 +52,14 @@ class SerieRequest
             die("ERROR 404 : Données introuvable !");
         }
         $genres = $this->getGenresSerie($id);
-        return new Serie($data['id'], $data['nom'], $genres, $data['etoiles'], $data['synopsis']);
+        return new Serie($data['id'], $data['name'], $genres, $data['etoiles'], $data['synopsis']);
     }
 
     public function getSeriesSearch($id, $lang = "VF"): array
     {
         // Construire l'URL de l'API Flask
-        $apiUrl = "http://localhost:5000/search/$id/$lang";
+        $encodedId = urlencode($id);
+        $apiUrl = "http://localhost:5000/search?id=$encodedId&lang=$lang";
 
         // Effectuer la requête GET
         $response = file_get_contents($apiUrl);
@@ -77,15 +79,19 @@ class SerieRequest
 
         $series = array();
         foreach ($data as $serie) {
-            $series[] = $this->getSerie($serie['id']);
+            $series[] = $this->getSerie($serie);
         }
         return $series;
     }
 
-    public function getSerieByGenre($genre): array
+    /*
+     * Retourne les séries correspondant à un genre donné
+     * @param string $genre
+     * @return array
+     */
+    public function getSerieByGenre(string $genre): array
     {
-        $sql = "SELECT serie.id, serie.name, serie.etoiles, serie.synopsis
-                FROM serie
+        $sql = "SELECT serie.id FROM serie
                          JOIN serie_genre ON serie.id = serie_genre.serie_id
                          JOIN genre ON serie_genre.genre_id = genre.id
                 WHERE genre.genre_name = :genre";
@@ -95,9 +101,10 @@ class SerieRequest
         if (!$data) {
             die("ERROR 404 : Données introuvable !");
         }
+
         $series = array();
-        foreach ($data as $serie) {
-            $series[] = $this->getSerie($serie['id']);
+        foreach ($data as $row) {
+            $series[] = $this->getSerie($row['id']);
         }
         return $series;
     }

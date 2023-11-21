@@ -11,14 +11,16 @@ use PDO;
  */
 class Database
 {
-    private static $instance = null;
-    private $connection;
+    private static ?Database $instance = null;
+    private PDO $connection;
 
     private function __construct($login, $password)
     {
         try {
-            if (php_uname('n') == "MAXIWERE45A") {
+            if (php_uname('n') == "MAXIWERE45A") { // PC WINDOWS
                 $this->connection = new PDO("mysql:host=localhost;dbname=serie_net=UTF8", $login, $this->decoder($password, "thou"));
+            } elseif (php_uname('n') == "amdjad-TUF"){ // PC LINUX
+                $this->connection = new PDO("mysql:host=localhost;dbname=serie_net;charset=UTF8", "amdjad", $this->decoder($password, "thou"));
             } else {
                 $this->connection = new PDO("mysql:host=localhost;dbname=serie_net;charset=UTF8", $login, $this->decoder($password, "thou"));
             }

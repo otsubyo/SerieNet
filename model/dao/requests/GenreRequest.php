@@ -10,7 +10,7 @@ use model\dao\requests\SerieRequest;
 
 class GenreRequest
 {
-    private $linkpdo;
+    private PDO $linkpdo;
 
     public function __construct()
     {
@@ -62,14 +62,14 @@ class GenreRequest
         return $series;
     }
 
-    public function insertGenre($name)
+    public function insertGenre($name): void
     {
         $sql = "INSERT INTO genre (genre_name) VALUES (:name)";
         $stmt = $this->linkpdo->prepare($sql);
         $stmt->execute(array(':name' => $name));
     }
 
-    public function deleteGenre($id)
+    public function deleteGenre($id): void
     {
         $sql = "DELETE FROM genre WHERE id = :id";
         $stmt = $this->linkpdo->prepare($sql);

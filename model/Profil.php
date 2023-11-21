@@ -6,9 +6,9 @@ namespace model;
  */
 class Profil
 {
-    private $nom;
-    private $id_profil;
-    private $id_user;
+    private string $nom;
+    private string $id_profil;
+    private string $id_user;
 
     /**
      * Constructeur de la classe profil

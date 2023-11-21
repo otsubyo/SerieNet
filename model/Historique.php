@@ -6,15 +6,15 @@ namespace model;
  */
 class Historique
 {
-    private $id;
-    private $id_profil;
-    private $terme_recherche;
-    private $date_recherche;
+    private string|int $id;
+    private string|int $id_profil;
+    private string $terme_recherche;
+    private string $date_recherche;
 
     /**
      * Constructeur de la classe historique
      *
-     * @param string $id_profil L'id du profil
+     * @param int $id_profil L'id du profil
      * @param string $recherche L'historique de recherche
      * @param string $date_recherche La date de la recherche
      */

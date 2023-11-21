@@ -6,8 +6,8 @@ namespace model;
  */
 class Utilisateur
 {
-    private $identifiant;
-    private $mot_de_passe;
+    private string $identifiant;
+    private string $mot_de_passe;
 
     /**
      * Constructeur de la classe utilisateur
