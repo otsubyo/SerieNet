@@ -175,7 +175,8 @@ DROP TABLE IF EXISTS `utilisateur`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `utilisateur` (
   `identifiant` varchar(20) NOT NULL,
-  `mot_de_passe` varchar(999) NOT NULL
+  `mot_de_passe` varchar(999) NOT NULL,
+  PRIMARY KEY (`identifiant`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -185,7 +186,7 @@ CREATE TABLE `utilisateur` (
 
 LOCK TABLES `utilisateur` WRITE;
 /*!40000 ALTER TABLE `utilisateur` DISABLE KEYS */;
-INSERT INTO `utilisateur` VALUES ('julien_broisin','b38bb9429239744b50dfc9ef13d1a96b1985eb2b1afc9d056d3650b97c015cb7');
+INSERT INTO `utilisateur` VALUES ('julien_broisin','b38bb9429239744b50dfc9ef13d1a96b1985eb2b1afc9d056d3650b97c015cb7'),('amdjad','0236bfa420bcb17e716e364e15b592e54a49ffabe248d54debc83b933cba64ce'),('carl','53522fabade8033968f86e73cd36d4d109bf37fbdcdb3ee170eb8dc53e5ac107');
 /*!40000 ALTER TABLE `utilisateur` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -198,4 +199,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-21 11:00:50
+-- Dump completed on 2023-11-28 13:56:23
