@@ -23,7 +23,7 @@ switch ($http_method) {
         if (isset($_GET['id']) && isset($_GET['lang'])) {
             $id = htmlspecialchars($_GET['id']);
             $lang = htmlspecialchars($_GET['lang']);
-            $serie = $serieRequest->getSeriesSearch($id);
+            $serie = $serieRequest->getSeriesSearch($id, $lang);
             if ($serie != null) {
                 deliverResponse(200, "Série trouvée", $serie);
             } else {

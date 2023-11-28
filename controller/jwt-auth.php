@@ -2,7 +2,7 @@
 namespace controller;
 
 require_once(__DIR__ . "/../model/dao/requests/UserRequest.php");
-require_once(__DIR__ . "/../model/User.php");
+require_once(__DIR__ . "/../model/Utilisateur.php");
 require_once __DIR__ . "/../libs/functions-utils.php";
 require_once(__DIR__ . "/../libs/jwt-utils.php");
 use model\dao\requests\UserRequest;
@@ -17,28 +17,27 @@ $http_method = $_SERVER['REQUEST_METHOD'];
 if ($http_method == 'POST') {
     $data = (array) json_decode(file_get_contents('php://input'), true);
     $userRequest = new UserRequest();
-    if (!isset($data['username']) || !isset($data['password'])) {
+    if (!isset($data['identifiant']) || !isset($data['clef'])) {
         deliverResponse(400, "Requête invalide", null);
         exit();
     }
-    if (isValidUser($data['username'], $data['password'])) {
+    if (isValidUser($data['identifiant'], $data['clef'])) {
         // Traitement
-        $username = $userRequest->getUser($data['username']);
+        $username = $userRequest->getUser($data['identifiant']);
         $headers = array(
             'typ' => 'JWT',
             'alg' => 'HS256'
         );
 
         $payload = array(
-            'username' => $username->getLogin(),
-            'role' => $username->getRole(),
+            'identifiant' => $username->getIdentifiant(),
             'exp' => (time() + 3600)
         );
         $jwt = generate_jwt($headers, $payload);
-        deliverResponse(200, "Vous êtes connecté en tant que ".$username->getLogin()." avec le role ".$username->getRole(), $jwt);
-        syslog(LOG_INFO, "L'utilisateur ".$username->getLogin()." s'est connecté avec succès");
+        deliverResponse(200, "Vous êtes connecté en tant que ".$username->getIdentifiant(), $jwt);
+        syslog(LOG_INFO, "L'utilisateur ".$username->getIdentifiant()." s'est connecté avec succès");
     } else {
-        deliverResponse(401, "Login ou mot de passe incorrect veuillez reessayer de nouveau !", null);
+        deliverResponse(401, "Identifiant ou mot de passe incorrect veuillez reessayer de nouveau !", null);
     }
 } else {
     print_r("Serveur en attente de requête...\n");

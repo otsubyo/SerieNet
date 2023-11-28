@@ -2,7 +2,7 @@
 namespace libs;
 
 require_once __DIR__ . "/../model/dao/requests/UserRequest.php";
-require_once __DIR__ . "/../model/User.php";
+require_once __DIR__ . "/../model/Utilisateur.php";
 use Exception;
 use model\dao\requests\UserRequest;
 use model\Utilisateur;
@@ -17,13 +17,14 @@ function isValidUser(string $username, string $password): bool
 {
     $userRequest = new UserRequest();
     // Protection contre les injections SQL et XSS
-    $user = htmlspecialchars($username);
+    $user = $userRequest->getUser(htmlspecialchars($username));
     $pass = hash('sha256', htmlspecialchars($password));
 
-    if ($user == $userRequest->getUser($user)->getIdentifiant()
-        && $pass == $userRequest->getUser($user)->getMotDePasse()) {
+    if ($user->getIdentifiant() == $username
+        && $user->getMotDePasse() == $pass) {
         return true;
     }
+
     return false;
 }
 
@@ -34,7 +35,7 @@ function isValidUser(string $username, string $password): bool
  * @param $data
  * @return void
  */
-function deliverResponse($status, $statusMessage, $data)
+function deliverResponse($status, $statusMessage, $data): void
 {
     // Paramétrage de l'entête HTTP, suite
     header("HTTP/1.1 $status $statusMessage");
@@ -60,6 +61,6 @@ function getJWTUser(string $bearer_token, UserRequest $userRequest): Utilisateur
 {
     $jwt = str_replace('Bearer ', '', $bearer_token);
     $payload = decode_jwt($jwt);
-    return $userRequest->getUser($payload['username']);
+    return $userRequest->getUser($payload['identifiant']);
 }
 

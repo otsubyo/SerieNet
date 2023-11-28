@@ -59,6 +59,9 @@ class SerieRequest
     {
         // Construire l'URL de l'API Flask
         $encodedId = urlencode($id);
+        if (!in_array($lang, array('VF', 'VO'))) {
+            die('Erreur : la langue doit être VF ou VO.');
+        }
         $apiUrl = "http://localhost:5000/search?id=$encodedId&lang=$lang";
 
         // Effectuer la requête GET
