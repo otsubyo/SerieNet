@@ -52,11 +52,6 @@ class Database
         return $this->connection;
     }
 
-    public function __destruct()
-    {
-        $this->connection = null;
-    }
-
     public function decoder($text, $key): string
     {
         $key_len = strlen($key);

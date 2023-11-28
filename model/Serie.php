@@ -94,6 +94,26 @@ class Serie
             '}';
     }
 
+    /**
+     * Renvoie la série au format JSON
+     * @return string
+     */
+    public function toArray(): array
+    {
+        $genres = "[";
+        foreach ($this->genres as $genre) {
+            $genres .= $genre->getNom() . ",";
+        }
+        $genres = substr($genres, 0, -1);
+        $genres .= "]";
+        return array(
+            "id" => $this->id,
+            "nom" => $this->nom,
+            "genres" => $genres,
+            "etoiles" => $this->etoiles,
+            "synopsis" => $this->synopsis
+        );
+    }
 }
 
 

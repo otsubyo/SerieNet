@@ -82,7 +82,7 @@ class SerieRequest
 
         $series = array();
         foreach ($data as $serie) {
-            $series[] = $this->getSerie($serie);
+            $series[] = $this->getSerie($serie)->toArray();
         }
         return $series;
     }
@@ -107,7 +107,24 @@ class SerieRequest
 
         $series = array();
         foreach ($data as $row) {
-            $series[] = $this->getSerie($row['id']);
+            $series[] = $this->getSerie($row['id'])->toArray();
+        }
+        return $series;
+    }
+
+    public function getAllSeries(): array
+    {
+        $sql = "SELECT * FROM serie";
+        $stmt = $this->linkpdo->prepare($sql);
+        $stmt->execute();
+        (array) $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if (!$data) {
+            die("ERROR 404 : Données introuvable !");
+        }
+
+        $series = array();
+        foreach ($data as $row) {
+            $series[] = $this->getSerie($row['id'])->toArray();
         }
         return $series;
     }

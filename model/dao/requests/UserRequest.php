@@ -2,7 +2,7 @@
 namespace model\dao\requests;
 
 require_once(__DIR__ . "/../../dao/Database.php");
-require_once(__DIR__ . "/../../User.php");
+require_once(__DIR__ . "/../../Utilisateur.php");
 use model\dao\Database;
 use model\Utilisateur;
 use PDO;

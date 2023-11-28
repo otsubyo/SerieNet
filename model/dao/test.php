@@ -1,6 +1,6 @@
 <?php
 
-$text = "9dfe351b";
+$text = "iutinfo";
 
 $shaKey = hash("sha256", $text);
 

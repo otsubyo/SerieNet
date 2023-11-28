@@ -46,7 +46,7 @@ function deliverResponse($status, $statusMessage, $data): void
     $response['data'] = $data;
 
     // Mapping de la réponse au format JSON
-    $jsonResponse = json_encode($response);
+    $jsonResponse = json_encode($response, JSON_PRETTY_PRINT);
     echo $jsonResponse;
 }
 

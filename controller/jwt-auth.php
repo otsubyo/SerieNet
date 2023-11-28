@@ -1,6 +1,9 @@
 <?php
 namespace controller;
 
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
 require_once(__DIR__ . "/../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../model/Utilisateur.php");
 require_once __DIR__ . "/../libs/functions-utils.php";
@@ -40,7 +43,7 @@ if ($http_method == 'POST') {
         deliverResponse(401, "Identifiant ou mot de passe incorrect veuillez reessayer de nouveau !", null);
     }
 } else {
-    print_r("Serveur en attente de requête...\n");
+    deliverResponse(201, "En attente de REQUEST", null);
 }
 
 
