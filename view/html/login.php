@@ -1,5 +1,56 @@
+<?php
+namespace view\html;
+
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
+require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
+require_once(__DIR__ . "/../../libs/jwt-utils.php");
+use model\dao\requests\UserRequest;
+
+session_start();
+if (isset($_SESSION['login'])) {
+    session_destroy();
+    if (isset($_COOKIE['search'])) {
+        setcookie('login', '', time() - 3600);
+    }
+}
+
+$username = null;
+$password = null;
+
+$userRequest = new UserRequest();
+$URL = "http://localhost/SerieNet/controller/jwt-auth.php";
+
+if (isset($_POST['btn-validate'])) {
+    $username = $_POST['inputUsername'];
+
+    $user = $userRequest->getUser($username);
+    // POST AUTH
+    $data = array("identifiant" => $username, "clef" => $_POST['inputPassword']);
+    $data_string = json_encode($data);
+    $result = file_get_contents($URL,
+        false,
+        stream_context_create(array('http' => array('method' => 'POST',
+            'content' => $data_string,
+            'header' => array('Content-Type: application/json'."\r\n"
+                .'Content-Length: '.strlen($data_string)."\r\n"))))
+        );
+        $receveid_data = json_decode($result, true);
+
+    if ($receveid_data['status'] == 200) {
+        $_SESSION['login'] = $user->getIdentifiant();
+        $_SESSION['start_time'] = time();
+        $_SESSION['token'] = get_bearer_token();
+        header("Location: index.php");
+        exit();
+    } else {
+        echo "Erreur de connexion";
+    }
+}
+?>
+
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="fr" dir="ltr">
 <head>
     <meta charset="utf-8">
@@ -11,17 +62,17 @@
 <div class="bg-img">
     <div class="content">
         <header>Bienvenue sur <span class="logo logo1">Serie</span><span class="logo logo2">.Net</span></header>
-        <form action="#">
+        <form action="" method="post">
             <div class="field">
                 <span class="fa fa-user"></span>
                 <label>
-                    <input type="text" required placeholder="Nom d'utilisateur...">
+                    <input type="text" required placeholder="Nom d'utilisateur..." name="inputUsername">
                 </label>
             </div>
             <div class="field space">
                 <span class="fa fa-lock"></span>
                 <label>
-                    <input type="password" class="pass-key" required placeholder="Mot de passe...">
+                    <input type="password" class="pass-key" required placeholder="Mot de passe..." name="inputPassword">
                 </label>
                 <span class="show">Voir</span>
             </div>
@@ -29,7 +80,7 @@
                 <a href="#">Mot de passe oublié ?</a>
             </div>
             <div class="field">
-                <input type="submit" value="CONNEXION">
+                <input type="submit" value="CONNEXION" name="btn-validate">
             </div>
         </form>
 
@@ -39,20 +90,5 @@
         </div>
     </div>
 </div>
-<script>
-    const pass_field = document.querySelector('.pass-key');
-    const showBtn = document.querySelector('.show');
-    showBtn.addEventListener('click', function(){
-        if(pass_field.type === "password"){
-            pass_field.type = "text";
-            showBtn.textContent = "Catcher";
-            showBtn.style.color = "#3498db";
-        }else{
-            pass_field.type = "password";
-            showBtn.textContent = "Voir";
-            showBtn.style.color = "#222";
-        }
-    });
-</script>
 </body>
 </html>

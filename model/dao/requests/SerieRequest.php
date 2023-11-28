@@ -52,7 +52,7 @@ class SerieRequest
             die("ERROR 404 : Données introuvable !");
         }
         $genres = $this->getGenresSerie($id);
-        return new Serie($data['id'], $data['name'], $genres, $data['etoiles'], $data['synopsis']);
+        return new Serie($data['id'], $data['name'], $genres, $data['etoiles'], $data['synopsis'], $data['poster']);
     }
 
     public function getSeriesSearch($id, $lang = "VF"): array
@@ -112,7 +112,7 @@ class SerieRequest
         return $series;
     }
 
-    public function getAllSeries(): array
+    public function getAllSeries($toarray = true): array
     {
         $sql = "SELECT * FROM serie";
         $stmt = $this->linkpdo->prepare($sql);
@@ -123,8 +123,15 @@ class SerieRequest
         }
 
         $series = array();
-        foreach ($data as $row) {
-            $series[] = $this->getSerie($row['id'])->toArray();
+
+        if ($toarray) {
+            foreach ($data as $row) {
+                $series[] = $this->getSerie($row['id'])->toArray();
+            }
+        } else {
+            foreach ($data as $row) {
+                $series[] = $this->getSerie($row['id']);
+            }
         }
         return $series;
     }

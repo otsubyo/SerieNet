@@ -14,6 +14,7 @@ class Serie
     private string|array $genres;
     private string $etoiles;
     private string $synopsis;
+    private string $image;
 
     /**
      * Constructeur de la classe Serie
@@ -22,14 +23,16 @@ class Serie
      * @param array $genres Le genre de la série
      * @param string $etoiles Le nombre d'étoiles de la série
      * @param string $synopsis Le synopsis de la série
+     * @param string $image L'image de la série
      */
-    public function __construct(string $id, string $nom, array $genres, string $etoiles, string $synopsis)
+    public function __construct(string $id, string $nom, array $genres, string $etoiles, string $synopsis, string $image)
     {
         $this->id = $id;
         $this->nom = $nom;
         $this->genres = $genres;
         $this->etoiles = $etoiles;
         $this->synopsis = $synopsis;
+        $this->image = $image;
     }
 
     /**
@@ -77,6 +80,19 @@ class Serie
         return $this->synopsis;
     }
 
+    /**
+     * Renvoie l'image de la série
+     * @return string
+     */
+    public function getImage(): string
+    {
+        return $this->image;
+    }
+
+    /**
+     * Renvoie la série au format String
+     * @return string
+     */
     public function toString(): string
     {
         $genres = "[";
@@ -96,7 +112,7 @@ class Serie
 
     /**
      * Renvoie la série au format JSON
-     * @return string
+     * @return array
      */
     public function toArray(): array
     {
@@ -111,9 +127,8 @@ class Serie
             "nom" => $this->nom,
             "genres" => $genres,
             "etoiles" => $this->etoiles,
-            "synopsis" => $this->synopsis
+            "synopsis" => $this->synopsis,
+            "image" => $this->image
         );
     }
 }
-
-

@@ -16,7 +16,7 @@
     </div>
     <div class="menu">
         <ul>
-            <li><a href="home.html">Accueil</a></li>
+            <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Votre liste</a></li>
             <li><a href="#">Explorer</a></li>
             <li><a href="#">Profil</a></li>

@@ -25,7 +25,7 @@ class UserRequest
         $stmt->execute(array(':id' => $user));
         (array)$data = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!$data) {
-            die("ERROR 404 : Données introuvable !");
+            die("ERROR 404 : Utilisateur ou mot de passe incorrect !");
         }
         return new Utilisateur($data['identifiant'], $data['mot_de_passe']);
     }

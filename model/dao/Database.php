@@ -14,6 +14,11 @@ class Database
     private static ?Database $instance = null;
     private PDO $connection;
 
+    /**
+     * Database constructor.
+     * @param $login
+     * @param $password
+     */
     private function __construct($login, $password)
     {
         try {
@@ -52,6 +57,12 @@ class Database
         return $this->connection;
     }
 
+    /**
+     * Décode le mot de passe donné en paramètre
+     * @param $text
+     * @param $key
+     * @return string
+     */
     public function decoder($text, $key): string
     {
         $key_len = strlen($key);
@@ -74,6 +85,12 @@ class Database
         return $plaintext;
     }
 
+    /**
+     * Encode le mot de passe donné en paramètre
+     * @param $plaintext
+     * @param $key
+     * @return string
+     */
     public function encoder($plaintext, $key): string
     {
         $key_len = strlen($key);
@@ -93,7 +110,6 @@ class Database
 
             $ciphertext .= $new_char;
         }
-
         return $ciphertext;
     }
 }

@@ -39,5 +39,4 @@ class Favoris
     {
         return $this->id_serie;
     }
-
 }

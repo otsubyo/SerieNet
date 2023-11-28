@@ -26,7 +26,7 @@ class Profil
     }
 
     /**
-     * Cette fonction renvoie le nom du profil
+     * Renvoie le nom du profil
      * @return string
      */
     public function getNom(): string
@@ -35,7 +35,7 @@ class Profil
     }
 
     /**
-     * Cette fonction renvoie l'id du profil
+     * Renvoie l'id du profil
      * @return string
      */
     public function getIdProfil(): string
@@ -44,7 +44,7 @@ class Profil
     }
 
     /**
-     * Cette fonction renvoie l'id de l'utilisateur à qui appartient le profil
+     * Renvoie l'id de l'utilisateur à qui appartient le profil
      * @return string
      */
     public function getIdUser(): string

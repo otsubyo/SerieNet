@@ -1,3 +1,35 @@
+<?php
+namespace view\html;
+
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
+require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
+require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
+require_once(__DIR__ . "/../../model/Serie.php");
+
+use model\dao\requests\UserRequest;
+use model\dao\requests\SerieRequest;
+use model\Serie;
+
+
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$userRequest = new UserRequest();
+$serieRequest = new SerieRequest();
+
+$user = $userRequest->getUser($_SESSION['login']);
+$series = $serieRequest->getAllSeries(false);
+shuffle($series);
+
+$reprendre_lecture = array_slice($series, 0, 6);
+$top_tendance = array_slice($series, 6, 8);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,8 +54,8 @@
         </ul>
     </div>
     <!-- Barre de recherche -->
-    <form action="search.html" class="search-bar">
-        <input type="search" name="search" placeholder=" Rechercher une série..." required>
+    <form action="" class="search-bar" method="post" onsubmit="return redirectToPage()" >
+        <input type="search" id="search-bar" name="search" placeholder=" Rechercher une série..." required>
     </form>
 </div>
 <section class="banner">
@@ -45,24 +77,11 @@
     <div class="banner-content">
         <h2>Reprendre la lecture</h2>
         <div class="box-container">
-            <div class="box">
-                <img src="../../ressources/posts/stargate_universe.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/cupid.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/xfiles.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/4400.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/breaking_bad.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/eureka.jpg" alt="">
-            </div>
+            <?php foreach ($reprendre_lecture as $serie) {
+                echo "<div class='box'>";
+                echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
+                echo "</div>";
+            } ?>
         </div>
     </div>
 </section>
@@ -70,25 +89,11 @@
     <div class="banner-content">
         <h2>Top du moment</h2>
         <div class="box-container">
-            <div class="box">
-                <img src="../../ressources/posts/lie_to_me.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/4400.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/primeval.jpeg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/alias.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/doctor_who.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/bionic_woman.jpg" alt="">
-            </div>
-
+            <?php foreach ($top_tendance as $serie) {
+                echo "<div class='box'>";
+                echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
+                echo "</div>";
+            } ?>
         </div>
     </div>
 </section>
@@ -97,4 +102,13 @@
 </footer>
 </body>
 <script src="../js/script.js"></script>
+<script>
+    function redirectToPage() {
+        let searchTerm = document.querySelector('.search-bar input[name="search"]').value;
+        // Rediriger vers la page de votre choix
+        window.location.href = 'search.php?search=' + encodeURIComponent(searchTerm);
+        return false;
+    }
+
+</script>
 </html>

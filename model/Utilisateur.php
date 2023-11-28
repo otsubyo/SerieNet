@@ -22,7 +22,7 @@ class Utilisateur
     }
 
     /**
-     * Cette fonction renvoie l'identifiant de l'utilisateur
+     * Renvoie l'identifiant de l'utilisateur
      * @return string
      */
     public function getIdentifiant(): string
@@ -31,7 +31,7 @@ class Utilisateur
     }
 
     /**
-     * Cette fonction renvoie l'historique de recherche
+     * Renvoie l'historique de recherche
      * @return string
      */
     public function getMotDePasse(): string

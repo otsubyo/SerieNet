@@ -29,7 +29,7 @@ function isValidUser(string $username, string $password): bool
 }
 
 /**
- * Cette fonction envoie une réponse au client
+ * Envoie une réponse au client
  * @param $status
  * @param $statusMessage
  * @param $data
@@ -51,7 +51,7 @@ function deliverResponse($status, $statusMessage, $data): void
 }
 
 /**
- * Cette fonction permet de récupérer le token JWT envoyé par le client et retourne l'utilisateur correspondant
+ * Récupère le token JWT envoyé par le client et retourne l'utilisateur correspondant
  * @param string $bearer_token
  * @param UserRequest $userRequest
  * @return Utilisateur

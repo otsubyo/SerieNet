@@ -21,7 +21,6 @@ switch ($http_method) {
             $id = htmlspecialchars($_GET['id']);
             $lang = htmlspecialchars($_GET['lang']);
             $series = $serieRequest->getSeriesSearch($id, $lang);
-
             if ($series != null) {
                 deliverResponse(200, "Series trouvees", $series);
             } else {
