@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Profile Selection</title>
+    <!-- Ajoutez ici vos liens vers les fichiers CSS et JavaScript si nécessaire -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Choose Your Profile</h1>
+    <div class="profiles">
+        <div class="profile" onclick="selectProfile(1)">
+            <img src="profile1.jpg" alt="Profile 1">
+            <p>Profile 1</p>
+        </div>
+        <div class="profile" onclick="selectProfile(2)">
+            <img src="profile2.jpg" alt="Profile 2">
+            <p>Profile 2</p>
+        </div>
+        <div class="profile" onclick="selectProfile(3)">
+            <img src="profile3.jpg" alt="Profile 3">
+            <p>Profile 3</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function selectProfile(profileNumber) {
+        // Vous pouvez ajouter du code ici pour gérer la sélection du profil, par exemple, rediriger l'utilisateur vers une autre page.
+        alert('Selected Profile ' + profileNumber);
+    }
+</script>
+
+</body>
+</html>
