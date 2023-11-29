@@ -8,10 +8,7 @@ require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
 require_once(__DIR__ . "/../../model/Serie.php");
 
-use model\dao\requests\UserRequest;
 use model\dao\requests\SerieRequest;
-use model\Serie;
-
 
 session_start();
 if (!isset($_SESSION['login'])) {
@@ -19,10 +16,8 @@ if (!isset($_SESSION['login'])) {
     exit();
 }
 
-$userRequest = new UserRequest();
 $serieRequest = new SerieRequest();
 
-$user = $userRequest->getUser($_SESSION['login']);
 $series = $serieRequest->getAllSeries(false);
 shuffle($series);
 
@@ -55,7 +50,7 @@ $top_tendance = array_slice($series, 6, 8);
     </div>
     <!-- Barre de recherche -->
     <form action="" class="search-bar" method="post" onsubmit="return redirectToPage()" >
-        <input type="search" id="search-bar" name="search" placeholder=" Rechercher une série..." required>
+        <label for="search-bar"></label><input type="search" id="search-bar" name="search" placeholder=" Rechercher une série..." required>
     </form>
 </div>
 <section class="banner">
