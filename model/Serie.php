@@ -11,7 +11,7 @@ class Serie
 {
     private string $id;
     private string $nom;
-    private string|array $genres;
+    private array $genres;
     private string $etoiles;
     private string $synopsis;
     private string $image;
