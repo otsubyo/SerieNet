@@ -35,12 +35,15 @@ switch ($http_method) {
             } else {
                 deliverResponse(404, "Series non trouvees", null);
             }
+        } elseif (isset($_GET['id']) && !isset($_GET['lang'])) {
+            deliverResponse(400, "Requete invalide", null);
         } else {
-            deliverResponse(200, "Toutes les series", $serieRequest->getAllSeries());
+            $series = $serieRequest->getAllSeries();
+            deliverResponse(200, "Toutes les series", $series);
         }
         break;
     // Cas de la méthode POST
     case "POST":
-        break;
+        deliverResponse(500, "Requete non implementee", null);
 
 }

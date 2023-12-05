@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.logo-container h1 {
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.logo-container h1 span {
+    color: #AD241B;
+}
+
+h2 {
+    color: #a6a0a0;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.team-profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.team-profile .profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 50%;
+}
+
+.team-profile .profile-container .profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3%;
+}
+
+.team-profile .profile-container a h3{
+    color: grey;
+}
+
+.team-profile .profile-container a img {
+    width: 100%;
+    opacity: 0.5;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.team-profile .profile-container a img:hover {
+    opacity: 0.95;
+    transform: scale(1.1);
+    margin-bottom: 5px;
+}
