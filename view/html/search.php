@@ -36,7 +36,7 @@
 
 <section class="search-results">
     <div class="banner-content">
-        <h2>Résultats</h2>
+        <h2>Résultats de votre recherche</h2>
         <div class="box-container">
             <div class="box">
                 <img src="../../ressources/posts/stargate_universe.jpg" alt="">
