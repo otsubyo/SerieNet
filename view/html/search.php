@@ -27,9 +27,9 @@
     <span></span>
 </div>
 <section class="Search">
-    <form id="form-search" action="#" method="get">
+    <form id="form-search" action="" method="get">
         <label>
-            <input type="search" name="search" placeholder=" Rechercher une autre série..." required>
+            <input type="search" name="search" onsubmit="return redirectToPage()" placeholder=" Rechercher une autre série..." required>
         </label>
     </form>
 </section>
