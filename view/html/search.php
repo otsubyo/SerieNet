@@ -19,7 +19,7 @@
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Votre liste</a></li>
             <li><a href="#">Explorer</a></li>
-            <li><a href="#">Profil</a></li>
+            <li><a href="#">Déconnexion</a></li>
         </ul>
     </div>
     <!-- Barre de recherche -->

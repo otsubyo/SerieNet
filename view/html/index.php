@@ -45,7 +45,7 @@ $top_tendance = array_slice($series, 6, 8);
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Votre liste</a></li>
             <li><a href="explore.html">Explorer</a></li>
-            <li><a href="#">Profil</a></li>
+            <li><a href="#">Déconnexion</a></li>
         </ul>
     </div>
     <!-- Barre de recherche -->
