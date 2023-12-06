@@ -34,10 +34,16 @@ $top_tendance = array_slice($series, 6, 8);
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
     <title>Accueil</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 <div class="navigation-bar">
     <div class="logo">
+        <a href="index.php" class="logo">
         <span class="logo">Serie</span><span class="logo1">.Net</span>
     </div>
     <div class="menu">

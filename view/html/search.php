@@ -8,10 +8,16 @@
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
     <title>Accueil</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 <div class="navigation-bar">
     <div class="logo">
+        <a href="index.php" class="logo">
         <span class="logo">Serie</span><span class="logo1">.Net</span>
     </div>
     <div class="menu">
@@ -19,7 +25,7 @@
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Votre liste</a></li>
             <li><a href="#">Explorer</a></li>
-            <li><a href="#">Déconnexion</a></li>
+            <li><a href="#" >Déconnexion</a></li>
         </ul>
     </div>
     <!-- Barre de recherche -->
