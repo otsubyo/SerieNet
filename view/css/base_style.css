@@ -219,9 +219,42 @@ section{
     transform: scale(1.1);
 }
 
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
 
 
+}
 
+
+#form-search {
+    text-align: center;
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+    width : 100%;
+    margin-top: 6%;
+}
+
+#form-search label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#form-search input[type="search"] {
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #de2222;
+    border-radius: 0;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+.footer{
+    display: none;
+}
 
 
 

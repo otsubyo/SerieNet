@@ -27,25 +27,38 @@
     <span></span>
 </div>
 <section class="Search">
-    <form action="#" method="get">
+    <form id="form-search" action="#" method="get">
         <label>
-            <input type="search" name="search" placeholder=" Rechercher une série..." required>
+            <input type="search" name="search" placeholder=" Rechercher une autre série..." required>
         </label>
     </form>
 </section>
 
-<section class="science-fiction">
+<section class="search-results">
     <div class="banner-content">
-        <h2>Resultats</h2>
+        <h2>Résultats</h2>
         <div class="box-container">
-
+            <div class="box">
+                <img src="../../ressources/posts/stargate_universe.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../../ressources/posts/battlestar_galactica.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../../ressources/posts/bionic_woman.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../../ressources/posts/caprica.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="../../ressources/posts/doctor_who.jpg" alt="">
+            </div>
         </div>
     </div>
-</section>
-<footer>
-    <br>
-</footer>
-
 </body>
 <script src="../js/script.js"></script>
 </html>
+
+<section class="search-results">
+    <div class="banner-content">
+    </div>
