@@ -44,14 +44,14 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!----======== CSS ======== -->
+    <link rel="icon" href="../../ressources/images/sn_logo.png">
     <link rel="stylesheet" href="../css/base_style.css">
     <title>Explorer</title>
 </head>
 <body>
 <div class="navigation-bar">
     <div class="logo">
-        <span class="logo">Serie</span><span class="logo1">.Net</span>
+        <a href="index.php" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
     </div>
     <div class="menu">
         <ul>
