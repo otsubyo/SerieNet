@@ -12,14 +12,14 @@
 <body>
 <div class="navigation-bar">
     <div class="logo">
-        <span class="logo">Serie</span><span class="logo1">.Net</span>
+        <a href="index.php" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
     </div>
     <div class="menu">
         <ul>
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Votre liste</a></li>
-            <li><a href="#">Explorer</a></li>
-            <li><a href="#">Déconnexion</a></li>
+            <li><a href="explore.html">Explorer</a></li>
+            <li><a href="login.php">Déconnexion</a></li>
         </ul>
     </div>
     <!-- Barre de recherche -->
