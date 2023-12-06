@@ -1,9 +1,6 @@
 <?php
 namespace view\html;
 
-error_reporting(E_ALL);
-ini_set('display_errors', 'On');
-
 require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../libs/jwt-utils.php");
 use model\dao\requests\UserRequest;
@@ -11,9 +8,6 @@ use model\dao\requests\UserRequest;
 session_start();
 if (isset($_SESSION['login'])) {
     session_destroy();
-    if (isset($_COOKIE['search'])) {
-        setcookie('login', '', time() - 3600);
-    }
 }
 
 $username = null;
@@ -42,7 +36,7 @@ if (isset($_POST['btn-validate'])) {
         $_SESSION['login'] = $user->getIdentifiant();
         $_SESSION['start_time'] = time();
         $_SESSION['token'] = get_bearer_token();
-        header("Location: index.php");
+        header("Location: profile.php");
         exit();
     } else {
         echo "Erreur de connexion";

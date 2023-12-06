@@ -1,12 +1,15 @@
 <?php
 namespace model\dao\requests;
+
+require_once(__DIR__ . "/../../Profil.php");
+
 use model\dao\Database;
 use model\Profil;
 use PDO;
 
 class ProfilRequest
 {
-    private $linkpdo;
+    private PDO $linkpdo;
 
     public function __construct()
     {
@@ -40,6 +43,4 @@ class ProfilRequest
         }
         return $profils;
     }
-
-
 }
