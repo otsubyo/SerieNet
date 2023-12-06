@@ -1,9 +1,6 @@
 <?php
 namespace view\html;
 
-error_reporting(E_ALL);
-ini_set('display_errors', 'On');
-
 require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
 require_once(__DIR__ . "/../../model/Serie.php");
@@ -44,7 +41,7 @@ $top_tendance = array_slice($series, 6, 8);
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Votre liste</a></li>
-            <li><a href="explore.html">Explorer</a></li>
+            <li><a href="explore.php">Explorer</a></li>
             <li><a href="login.php">Déconnexion</a></li>
         </ul>
     </div>

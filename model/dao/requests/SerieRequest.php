@@ -92,7 +92,7 @@ class SerieRequest
      * @param string $genre
      * @return array
      */
-    public function getSerieByGenre(string $genre): array
+    public function getSeriesByGenre(string $genre, $toarray=true): array
     {
         $sql = "SELECT serie.id FROM serie
                          JOIN serie_genre ON serie.id = serie_genre.serie_id
@@ -106,8 +106,15 @@ class SerieRequest
         }
 
         $series = array();
-        foreach ($data as $row) {
-            $series[] = $this->getSerie($row['id'])->toArray();
+
+        if ($toarray) {
+            foreach ($data as $row) {
+                $series[] = $this->getSerie($row['id'])->toArray();
+            }
+        } else {
+            foreach ($data as $row) {
+                $series[] = $this->getSerie($row['id']);
+            }
         }
         return $series;
     }

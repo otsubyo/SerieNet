@@ -28,7 +28,7 @@ switch ($http_method) {
             }
         } elseif (isset($_GET['genre'])) {
             $genre = htmlspecialchars($_GET['genre']);
-            $series = $serieRequest->getSerieByGenre($genre);
+            $series = $serieRequest->getSeriesByGenre($genre);
 
             if ($series != null) {
                 deliverResponse(200, "Series trouvees", $series);

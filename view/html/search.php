@@ -18,7 +18,7 @@
         <ul>
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Votre liste</a></li>
-            <li><a href="explore.html">Explorer</a></li>
+            <li><a href="explore.php">Explorer</a></li>
             <li><a href="login.php">Déconnexion</a></li>
         </ul>
     </div>
