@@ -1,9 +1,6 @@
 <?php
 namespace view\html;
 
-error_reporting(E_ALL);
-ini_set('display_errors', 'On');
-
 require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
 require_once(__DIR__ . "/../../model/Serie.php");
@@ -49,7 +46,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
 
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
-    <title>Accueil</title>
+    <title>Explorer</title>
 </head>
 <body>
 <div class="navigation-bar">

@@ -55,7 +55,7 @@ class SerieRequest
         return new Serie($data['id'], $data['name'], $genres, $data['etoiles'], $data['synopsis'], $data['poster']);
     }
 
-    public function getSeriesSearch($id, $lang = "VF"): array
+    public function getSeriesSearch($id, $lang = "VF", $toarray=true): array
     {
         // Construire l'URL de l'API Flask
         $encodedId = urlencode($id);
@@ -81,8 +81,15 @@ class SerieRequest
         }
 
         $series = array();
-        foreach ($data as $serie) {
-            $series[] = $this->getSerie($serie)->toArray();
+
+        if ($toarray) {
+            foreach ($data as $serie) {
+                $series[] = $this->getSerie($serie)->toArray();
+            }
+        } else {
+            foreach ($data as $serie) {
+                $series[] = $this->getSerie($serie);
+            }
         }
         return $series;
     }

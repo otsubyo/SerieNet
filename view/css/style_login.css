@@ -9,7 +9,7 @@
 .bg-img{
   height: 100vh;
   background-size: cover;
-  background: url('../../ressources/background_image.jpg') center;
+  background: url('../../ressources/images/background_image.jpg') center;
 }
 .bg-img:after{
   position: absolute;

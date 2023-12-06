@@ -30,7 +30,8 @@ $top_tendance = array_slice($series, 6, 8);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
-    <title>Accueil</title>
+    <link rel="icon" href="../../ressources/images/sn_logo.png">
+    <title>SERIE NET</title>
 </head>
 <body>
 <div class="navigation-bar">
@@ -67,7 +68,7 @@ $top_tendance = array_slice($series, 6, 8);
 </section>
 <section class="reprendre-content">
     <div class="banner-content">
-        <h2>Reprendre la lecture</h2>
+        <h2><span>Reprendre</span> la lecture</h2>
         <div class="box-container">
             <?php foreach ($reprendre_lecture as $serie) {
                 echo "<div class='box'>";
@@ -79,7 +80,7 @@ $top_tendance = array_slice($series, 6, 8);
 </section>
 <section class="top-tendance-content">
     <div class="banner-content">
-        <h2>Top du moment</h2>
+        <h2><span>Top</span> du moment</h2>
         <div class="box-container">
             <?php foreach ($top_tendance as $serie) {
                 echo "<div class='box'>";

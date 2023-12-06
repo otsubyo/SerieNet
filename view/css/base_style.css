@@ -27,8 +27,9 @@ section{
     background: var(--second-color);
 }
 
-
-
+span{
+    color: var(--main-color);
+}
 
 .navigation-bar{
     position: sticky;

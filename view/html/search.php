@@ -1,3 +1,30 @@
+<?php
+namespace view\html;
+
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
+require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
+require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
+require_once(__DIR__ . "/../../model/Serie.php");
+
+use model\dao\requests\SerieRequest;
+
+session_start();
+if (!isset($_SESSION['login'])) {
+    header("Location: login.php");
+    exit();
+}
+$serieRequest = new SerieRequest();
+
+$series = array();
+
+if (isset($_GET['search'])) {
+    $search = $_GET['search'];
+    $series = $serieRequest->getSeriesSearch($search, "VF", false);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +34,7 @@
     <script src="../js/script.js"></script>
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
-    <title>Accueil</title>
+    <title>Recherche</title>
 </head>
 <body>
 <div class="navigation-bar">
@@ -38,30 +65,12 @@
     <div class="banner-content">
         <h2>Résultats de votre recherche</h2>
         <div class="box-container">
-            <div class="box">
-                <img src="../../ressources/posts/stargate_universe.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/battlestar_galactica.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/bionic_woman.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/caprica.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/doctor_who.jpg" alt="">
-            </div>
+            <?php foreach ($series as $serie) {
+                echo "<div class='box'>";
+                echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
+                echo "</div>";
+            } ?>
         </div>
     </div>
 </body>
 </html>
-
-
-
-
-<section class="search-results">
-    <div class="banner-content">
-    </div>
-</section>
