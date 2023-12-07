@@ -1,9 +1,6 @@
 <?php
 namespace view\html;
 
-error_reporting(E_ALL);
-ini_set('display_errors', 'On');
-
 require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
 require_once(__DIR__ . "/../../model/Serie.php");
@@ -12,6 +9,7 @@ use model\dao\requests\SerieRequest;
 
 session_start();
 if (!isset($_SESSION['login'])) {
+    session_destroy();
     header("Location: login.php");
     exit();
 }
@@ -33,25 +31,20 @@ $top_tendance = array_slice($series, 6, 8);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
-    <title>Accueil</title>
-    <style>
-        a {
-            text-decoration: none;
-        }
-    </style>
+    <link rel="icon" href="../../ressources/images/sn_logo.png">
+    <title>SERIE NET</title>
 </head>
 <body>
 <div class="navigation-bar">
     <div class="logo">
-        <a href="index.php" class="logo">
-        <span class="logo">Serie</span><span class="logo1">.Net</span>
+        <a href="index.php" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
     </div>
     <div class="menu">
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Votre liste</a></li>
-            <li><a href="explore.html">Explorer</a></li>
-            <li><a href="#">Déconnexion</a></li>
+            <li><a href="explore.php">Explorer</a></li>
+            <li><a href="login.php">Déconnexion</a></li>
         </ul>
     </div>
     <!-- Barre de recherche -->
@@ -76,7 +69,7 @@ $top_tendance = array_slice($series, 6, 8);
 </section>
 <section class="reprendre-content">
     <div class="banner-content">
-        <h2>Reprendre la lecture</h2>
+        <h2><span>Reprendre</span> la lecture</h2>
         <div class="box-container">
             <?php foreach ($reprendre_lecture as $serie) {
                 echo "<div class='box'>";
@@ -88,7 +81,7 @@ $top_tendance = array_slice($series, 6, 8);
 </section>
 <section class="top-tendance-content">
     <div class="banner-content">
-        <h2>Top du moment</h2>
+        <h2><span>Top</span> du moment</h2>
         <div class="box-container">
             <?php foreach ($top_tendance as $serie) {
                 echo "<div class='box'>";

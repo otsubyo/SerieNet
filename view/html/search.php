@@ -1,3 +1,33 @@
+<?php
+namespace view\html;
+
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
+require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
+require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
+require_once(__DIR__ . "/../../model/Serie.php");
+
+use model\dao\requests\SerieRequest;
+
+session_start();
+if (!isset($_SESSION['login'])) {
+    session_destroy();
+    header("Location: login.php");
+    exit();
+}
+
+
+$serieRequest = new SerieRequest();
+
+$series = array();
+
+if (isset($_GET['search'])) {
+    $search = $_GET['search'];
+    $series = $serieRequest->getSeriesSearch($search, "VF", false);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +37,19 @@
     <script src="../js/script.js"></script>
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
-    <title>Accueil</title>
-    <style>
-        a {
-            text-decoration: none;
-        }
-    </style>
+    <title>Recherche</title>
 </head>
 <body>
 <div class="navigation-bar">
     <div class="logo">
-        <a href="index.php" class="logo">
-        <span class="logo">Serie</span><span class="logo1">.Net</span>
+        <a href="index.php" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
     </div>
     <div class="menu">
         <ul>
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Votre liste</a></li>
-            <li><a href="#">Explorer</a></li>
-            <li><a href="#" >Déconnexion</a></li>
+            <li><a href="explore.php">Explorer</a></li>
+            <li><a href="login.php">Déconnexion</a></li>
         </ul>
     </div>
     <!-- Barre de recherche -->
@@ -44,30 +68,12 @@
     <div class="banner-content">
         <h2>Résultats de votre recherche</h2>
         <div class="box-container">
-            <div class="box">
-                <img src="../../ressources/posts/stargate_universe.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/battlestar_galactica.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/bionic_woman.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/caprica.jpg" alt="">
-            </div>
-            <div class="box">
-                <img src="../../ressources/posts/doctor_who.jpg" alt="">
-            </div>
+            <?php foreach ($series as $serie) {
+                echo "<div class='box'>";
+                echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
+                echo "</div>";
+            } ?>
         </div>
     </div>
 </body>
 </html>
-
-
-
-
-<section class="search-results">
-    <div class="banner-content">
-    </div>
-</section>

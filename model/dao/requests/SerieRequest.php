@@ -55,7 +55,7 @@ class SerieRequest
         return new Serie($data['id'], $data['name'], $genres, $data['etoiles'], $data['synopsis'], $data['poster']);
     }
 
-    public function getSeriesSearch($id, $lang = "VF"): array
+    public function getSeriesSearch($id, $lang = "VF", $toarray=true): array
     {
         // Construire l'URL de l'API Flask
         $encodedId = urlencode($id);
@@ -81,8 +81,15 @@ class SerieRequest
         }
 
         $series = array();
-        foreach ($data as $serie) {
-            $series[] = $this->getSerie($serie)->toArray();
+
+        if ($toarray) {
+            foreach ($data as $serie) {
+                $series[] = $this->getSerie($serie)->toArray();
+            }
+        } else {
+            foreach ($data as $serie) {
+                $series[] = $this->getSerie($serie);
+            }
         }
         return $series;
     }
@@ -92,7 +99,7 @@ class SerieRequest
      * @param string $genre
      * @return array
      */
-    public function getSerieByGenre(string $genre): array
+    public function getSeriesByGenre(string $genre, $toarray=true): array
     {
         $sql = "SELECT serie.id FROM serie
                          JOIN serie_genre ON serie.id = serie_genre.serie_id
@@ -106,8 +113,15 @@ class SerieRequest
         }
 
         $series = array();
-        foreach ($data as $row) {
-            $series[] = $this->getSerie($row['id'])->toArray();
+
+        if ($toarray) {
+            foreach ($data as $row) {
+                $series[] = $this->getSerie($row['id'])->toArray();
+            }
+        } else {
+            foreach ($data as $row) {
+                $series[] = $this->getSerie($row['id']);
+            }
         }
         return $series;
     }
