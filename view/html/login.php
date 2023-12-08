@@ -81,7 +81,7 @@ if (isset($_POST['btn-validate'])) {
 
         <div class="signup">
             Pas encore membre ?
-            <a href="#">S'insricre maintenant</a>
+            <a href="#">S'inscrire maintenant</a>
         </div>
     </div>
 </div>
