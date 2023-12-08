@@ -14,7 +14,7 @@ if (isset($_SESSION['login'])) {
 }
 
 $userRequest = new UserRequest();
-$URL = "http://localhost/SerieNet/controller/jwt-auth.php";
+$URL = "http://localhost/controller/jwt-auth.php";
 
 if (isset($_POST['btn-validate'])) {
     $username = $_POST['inputUsername'];
