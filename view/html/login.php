@@ -1,6 +1,9 @@
 <?php
 namespace view\html;
 
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
 require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../libs/jwt-utils.php");
 use model\dao\requests\UserRequest;
@@ -9,9 +12,6 @@ session_start();
 if (isset($_SESSION['login'])) {
     session_destroy();
 }
-
-$username = null;
-$password = null;
 
 $userRequest = new UserRequest();
 $URL = "http://localhost/SerieNet/controller/jwt-auth.php";

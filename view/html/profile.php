@@ -1,9 +1,6 @@
 <?php
 namespace view\html;
 
-error_reporting(E_ALL);
-ini_set('display_errors', 'On');
-
 require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../libs/jwt-utils.php");
 require_once(__DIR__ . "/../../model/dao/requests/ProfilRequest.php");
