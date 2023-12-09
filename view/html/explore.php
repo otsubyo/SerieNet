@@ -45,7 +45,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="../../ressources/images/sn_logo.png">
+    <link rel="icon" href="../../ressources/images/sn-logo.png">
     <link rel="stylesheet" href="../css/base_style.css">
     <title>Explorer</title>
 </head>

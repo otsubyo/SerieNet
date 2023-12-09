@@ -37,6 +37,7 @@ if (isset($_GET['search'])) {
     <script src="../js/script.js"></script>
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
+    <link rel="icon" href="../../ressources/images/sn-logo.png">
     <title>Recherche</title>
 </head>
 <body>

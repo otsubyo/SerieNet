@@ -50,7 +50,7 @@ if (isset($_POST['btn-validate'])) {
     <meta charset="utf-8">
     <title>SERIE NET</title>
     <link rel="stylesheet" href="../css/style_login.css">
-    <link rel="icon" href="../../ressources/images/sn_logo.png">
+    <link rel="icon" href="../../ressources/images/sn-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>

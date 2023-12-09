@@ -31,7 +31,7 @@ $top_tendance = array_slice($series, 6, 8);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
-    <link rel="icon" href="../../ressources/images/sn_logo.png">
+    <link rel="icon" href="../../ressources/images/serienet_logo.png">
     <title>SERIE NET</title>
 </head>
 <body>
