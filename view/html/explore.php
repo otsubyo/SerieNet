@@ -45,7 +45,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="../../ressources/images/sn-logo.png">
+    <link rel="icon" href="../../ressources/images/sn_logo.png">
     <link rel="stylesheet" href="../css/base_style.css">
     <title>Explorer</title>
 </head>
@@ -99,7 +99,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>DRAME</h2>
         <div class="box-container">
             <?php foreach ($drame as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             } ?>
@@ -112,7 +112,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>ACTION</h2>
         <div class="box-container">
             <?php foreach ($action as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             } ?>
@@ -125,7 +125,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>ESPIONNAGE</h2>
         <div class="box-container">
             <?php foreach ($espionnage as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             } ?>
@@ -138,7 +138,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>FANTASTIQUE</h2>
         <div class="box-container">
             <?php foreach ($fantastique as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             } ?>
@@ -151,7 +151,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>SURNATUREL</h2>
         <div class="box-container">
             <?php foreach ($surnaturel as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             }?>
@@ -164,7 +164,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>COMÉDIE</h2>
         <div class="box-container">
             <?php foreach ($comedie as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             }?>
@@ -177,7 +177,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>CRIME</h2>
         <div class="box-container">
             <?php foreach ($crime as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() . "' alt=''>";
                 echo "</div>";
             } ?>
@@ -190,7 +190,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>MYSTERE</h2>
         <div class="box-container">
             <?php foreach ($mystere as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             } ?>
@@ -203,7 +203,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>AVENTURE</h2>
         <div class="box-container">
             <?php foreach ($aventure as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() . "' alt=''>";
                 echo "</div>";
             } ?>
@@ -216,7 +216,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>ROMANCE</h2>
         <div class="box-container">
             <?php foreach ($romance as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() . "' alt=''>";
                 echo "</div>";
             } ?>
@@ -229,7 +229,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>COMÉDIE DRAMATIQUE</h2>
         <div class="box-container">
             <?php foreach ($comedie_dramatique as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() . "' alt=''>";
                 echo "</div>";
             } ?>
@@ -242,7 +242,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>HORREUR</h2>
         <div class="box-container">
             <?php foreach ($horreur as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() . "' alt=''>";
                 echo "</div>";
             } ?>
@@ -255,7 +255,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>MUSICAL</h2>
         <div class="box-container">
             <?php foreach ($musical as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() . "' alt=''>";
                 echo "</div>";
             } ?>
@@ -268,7 +268,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>SPORT</h2>
         <div class="box-container">
             <?php foreach ($sport as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() . "' alt=''>";
                 echo "</div>";
             }?>
@@ -281,7 +281,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>ANIMATION</h2>
         <div class="box-container">
             <?php foreach ($animation as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() . "' alt=''>";
                 echo "</div>";
             }?>
@@ -294,7 +294,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>MEDICAL</h2>
         <div class="box-container">
             <?php foreach ($medical as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() . "' alt=''>";
                 echo "</div>";
             }?>
@@ -307,7 +307,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>HISTORIQUE</h2>
         <div class="box-container">
             <?php foreach ($historique as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             }?>
@@ -320,7 +320,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>TEEN</h2>
         <div class="box-container">
             <?php foreach ($teen as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             }?>
@@ -328,11 +328,11 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         </div>
     </div>
 </section>
-
-<footer>
-    <br>
-</footer>
-
 </body>
+<script>
+    function redirectToSerieInfos(id) {
+        window.location.href = 'serie_infos.php?id=' + id;
+    }
+</script>
 <script src="../js/script.js"></script>
 </html>

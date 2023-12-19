@@ -4,3 +4,7 @@ function redirectToPage() {
     window.location.href = 'search.php?search=' + encodeURIComponent(searchTerm);
     return false;
 }
+
+function redirectToSerieInfos(id) {
+    window.location.href = 'serie_infos.php?id=' + id;
+}

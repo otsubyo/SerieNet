@@ -37,7 +37,7 @@ if (isset($_GET['search'])) {
     <script src="../js/script.js"></script>
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
-    <link rel="icon" href="../../ressources/images/sn-logo.png">
+    <link rel="icon" href="../../ressources/images/sn_logo.png">
     <title>Recherche</title>
 </head>
 <body>
@@ -69,12 +69,49 @@ if (isset($_GET['search'])) {
     <div class="banner-content">
         <h2>Résultats de votre recherche</h2>
         <div class="box-container">
-            <?php foreach ($series as $serie) {
-                echo "<div class='box'>";
-                echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
-                echo "</div>";
-            } ?>
+            <?php foreach ($series as $serie): ?>
+                <div class='box' onclick="redirectToSerieInfos(<?= $serie->getIdentifiant() ?>)">
+                    <img src='../../ressources/posts/<?= $serie->getImage() ?>' alt=''>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
+
+    <?php if (count($series) == 1): ?>
+        <div class="banner-content">
+            <h2>Du même genre</h2>
+            <div class="box-container">
+                <?php
+                // si la recherche renvoie uniquement une série, on affiche les séries du même genre
+                $genres = $series[0]->getGenres();
+                shuffle($genres);
+                $seriesSameGenre = $serieRequest->getSeriesByGenre($genres[0]->getNom(), false);
+
+                foreach ($seriesSameGenre as $serie): ?>
+                    <div class='box' onclick="redirectToSerieInfos(<?= $serie->getIdentifiant() ?>)">
+                        <img src='../../ressources/posts/<?= $serie->getImage() ?>' alt=''>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+    <?php endif; ?>
+</section>
+<div class="pied">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h1 class="logo-text"><span>SERIE</span>.NET</h1>
+            <p>
+                Serie.Net est une plateforme de recherche de séries des années 2000.
+                Elle vous permet de retrouver vos séries préférées et de consulter les
+                informations relatives à ces dernières. Vous pouvez également les ajouter à
+                votre liste personnelle.
+            </p>
+        </div>
+    </div>
+</div>
 </body>
+<script>
+    function redirectToSerieInfos(id) {
+        window.location.href = 'serie_infos.php?id=' + id;
+    }
+</script>
 </html>

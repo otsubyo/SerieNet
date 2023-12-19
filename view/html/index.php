@@ -1,9 +1,7 @@
 <?php
 namespace view\html;
 
-require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
-require_once(__DIR__ . "/../../model/Serie.php");
 
 use model\dao\requests\SerieRequest;
 
@@ -31,7 +29,7 @@ $top_tendance = array_slice($series, 6, 8);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../css/base_style.css">
-    <link rel="icon" href="../../ressources/images/serienet_logo.png">
+    <link rel="icon" href="../../ressources/images/sn_logo.png">
     <title>SERIE NET</title>
 </head>
 <body>
@@ -71,32 +69,47 @@ $top_tendance = array_slice($series, 6, 8);
     <div class="banner-content">
         <h2><span>Reprendre</span> la lecture</h2>
         <div class="box-container">
-            <?php foreach ($reprendre_lecture as $serie) {
-                echo "<div class='box'>";
-                echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
-                echo "</div>";
-            } ?>
+            <?php foreach ($reprendre_lecture as $serie): ?>
+                <div class='box' onclick="redirectToSerieInfos(<?= $serie->getIdentifiant() ?>)">
+                    <img src='../../ressources/posts/<?= $serie->getImage() ?>' alt=''>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
+
 <section class="top-tendance-content">
     <div class="banner-content">
         <h2><span>Top</span> du moment</h2>
         <div class="box-container">
-            <?php foreach ($top_tendance as $serie) {
-                echo "<div class='box'>";
-                echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
-                echo "</div>";
-            } ?>
+            <?php foreach ($top_tendance as $serie): ?>
+
+                <div class='box' onclick="redirectToSerieInfos(<?= $serie->getIdentifiant() ?>)">
+                    <img src='../../ressources/posts/<?= $serie->getImage() ?>' alt=''>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
-<footer>
-    <br>
-</footer>
-</body>
-<script src="../js/script.js"></script>
-<script>
 
+<div class="pied">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h1 class="logo-text"><span>SERIE</span>.NET</h1>
+            <p>
+                Serie.Net est une plateforme de recherche de séries des années 2000.
+                Elle vous permet de retrouver vos séries préférées et de consulter les
+                informations relatives à ces dernières. Vous pouvez également les ajouter à
+                votre liste personnelle.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function redirectToSerieInfos(id) {
+        window.location.href = 'serie_infos.php?id=' + id;
+    }
 </script>
+<script src="../js/script.js"></script>
 </html>

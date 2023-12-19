@@ -49,7 +49,7 @@ class SerieRequest
         $stmt->execute(array(':id' => $id));
         (array) $data = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!$data) {
-            die("ERROR 404 : Données introuvable !");
+            throw new \Exception("ERROR 404 : Données introuvable !");
         }
         $genres = $this->getGenresSerie($id);
         return new Serie($data['id'], $data['name'], $genres, $data['etoiles'], $data['synopsis'], $data['poster']);
@@ -69,7 +69,7 @@ class SerieRequest
 
         // Vérifier si la requête a réussi
         if ($response === false) {
-            die('Erreur lors de la récupération des données depuis l\'API.');
+            die('Erreur lors du requêtage de l\'API SerieNet.');
         }
 
         // Décoder la réponse JSON

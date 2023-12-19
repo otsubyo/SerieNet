@@ -17,7 +17,7 @@ $http_method = $_SERVER['REQUEST_METHOD'];
 switch ($http_method) {
     // Cas de la méthode GET
     case "GET":
-        if (isset($_GET['id']) && isset($_GET['lang'])) {
+        if (isset($_GET['id'], $_GET['lang'])) {
             $id = htmlspecialchars($_GET['id']);
             $lang = htmlspecialchars($_GET['lang']);
             $series = $serieRequest->getSeriesSearch($id, $lang);

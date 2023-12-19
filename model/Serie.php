@@ -63,6 +63,20 @@ class Serie
     }
 
     /**
+     * Renvoie le genre de la série au format String
+     * @return string
+     */
+    public function getGenresString(): string
+    {
+        $genres = "";
+        foreach ($this->genres as $genre) {
+            $genres .= $genre->getNom() . ",";
+        }
+        $genres = substr($genres, 0, -1);
+        return $genres;
+    }
+
+    /**
      * Renvoie le nombre d'étoiles de la série
      * @return int
      */

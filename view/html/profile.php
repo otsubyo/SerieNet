@@ -33,7 +33,7 @@ $i = 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qui est-ce ?</title>
     <link rel="stylesheet" href="../css/style_profile.css">
-    <link rel="icon" href="../../ressources/images/sn-logo.png">
+    <link rel="icon" href="../../ressources/images/sn_logo.png">
 </head>
 
 <body>
