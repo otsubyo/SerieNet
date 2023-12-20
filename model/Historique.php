@@ -6,19 +6,19 @@ namespace model;
  */
 class Historique
 {
-    private string|int $id;
-    private string|int $id_profil;
+    private string $id;
+    private string $id_profil;
     private string $terme_recherche;
     private string $date_recherche;
 
     /**
      * Constructeur de la classe historique
      *
-     * @param int $id_profil L'id du profil
+     * @param string $id_profil L'id du profil
      * @param string $recherche L'historique de recherche
      * @param string $date_recherche La date de la recherche
      */
-    public function __construct(int $id_profil, string $recherche, string $date_recherche)
+    public function __construct(string $id_profil, string $recherche, string $date_recherche)
     {
         $this->id = $id_profil;
         $this->id_profil = $id_profil;
