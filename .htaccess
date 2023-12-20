@@ -1,6 +1,21 @@
-<IfModule mod_authz_core.c>
-    Require all granted
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Rediriger "/view/html/login.php" vers "/view/html/login"
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)\.php$ /$1 [L,QSA]
+
+    # Rediriger "/view/html/login" vers "/view/html/login.php" en interne
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !\.php$
+    RewriteRule ^(.*)$ $1.php [L,QSA]
 </IfModule>
+
+
+
 
 
 

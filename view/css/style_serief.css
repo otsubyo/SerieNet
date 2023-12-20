@@ -21,12 +21,15 @@
 .serie-infos .serie-infos-img img {
     border: solid 2px rgba(255, 255, 255, 0.76);
 }
+
 .serie-infos-btn {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 1%;
+    margin-top: 2%;
+    width: auto;
+
 }
 
 .bg-img{

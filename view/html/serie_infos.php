@@ -3,6 +3,7 @@ namespace view\html;
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
 
 
+use Exception;
 use model\dao\requests\SerieRequest;
 
 session_start();
@@ -13,9 +14,13 @@ if (!isset($_SESSION['login'])) {
 }
 
 $serieRequest = new SerieRequest();
-
+$serie = null;
 if (isset($_GET['id'])) {
-    $serie = $serieRequest->getSerie($_GET['id']);
+    try {
+        $serie = $serieRequest->getSerie($_GET['id']);
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
 } else {
     exit();
 }
@@ -69,7 +74,8 @@ if (isset($_GET['id'])) {
 
         <!-- Bouton pour ajouter la série à la liste -->
         <div class="serie-infos-btn">
-            <button type="button" class="btn btn-primary">Ajouter à ma liste</button>
+            <button type="button" class="btn">Ajouter à ma liste</button>
+            <button type="button" class="btn">Retour</button>
         </div>
     </div>
 
