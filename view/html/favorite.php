@@ -1,3 +1,27 @@
+<?php
+namespace view\html;
+require_once(__DIR__ . "/../../model/dao/requests/FavorisRequest.php");
+
+use model\dao\requests\FavorisRequest;
+
+session_start();
+if (!isset($_SESSION['login'])) {
+    session_destroy();
+    header("Location: login.php");
+    exit();
+}
+
+$serieRequest = new FavorisRequest();
+
+if ($serieRequest->hasFavoris($_SESSION['profile'])) {
+    $seriesMaListe = $serieRequest->getFavoris($_SESSION['profile']);
+} else {
+    $seriesMaListe = array();
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +41,7 @@
         </div>
         <div class="menu">
             <ul>
-            <li><a href="#">Accueil</a></li>
+                <li><a href="index.php?profile=<?= $_SESSION['profile'] ?>">Accueil</a></li>
                 <li><a href="ma_liste.php">Votre liste</a></li>
                 <li><a href="explore.php">Explorer</a></li>
                 <li><a href="login.php">Déconnexion</a></li>
@@ -33,11 +57,13 @@
         <div class="banner-content">
             <h2><span class="red-text">Ma</span> Liste</h2>
             <div class="box-container">
-                <?php foreach ($seriesMaListe as $serie): ?>
-                    <div class='box' onclick="redirectToSerieInfos(<?= $serie->getIdentifiant() ?>)">
-                        <img src='../../ressources/posts/<?= $serie->getImage() ?>' alt=''>
-                    </div>
-                <?php endforeach; ?>
+                <?php if (!empty($seriesMaListe)): ?>
+                    <?php foreach ($seriesMaListe as $serie): ?>
+                        <div class='box' onclick="redirectToSerieInfos(<?= $serie->getIdentifiant() ?>)">
+                            <img src='../../ressources/posts/<?= $serie->getImage() ?>' alt=''>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </div>
     </section>
@@ -46,11 +72,13 @@
         <div class="banner-content">
             <h2><span class="red-text">Vos</span> recommandations</h2>
             <div class="box-container">
-                <?php foreach ($seriesMaListe as $serie): ?>
-                    <div class='box' onclick="redirectToSerieInfos(<?= $serie->getIdentifiant() ?>)">
-                        <img src='../../ressources/posts/<?= $serie->getImage() ?>' alt=''>
-                    </div>
-                <?php endforeach; ?>
+                <?php if (!empty($seriesMaListe)): ?>
+                    <?php foreach ($seriesMaListe as $serie): ?>
+                        <div class='box' onclick="redirectToSerieInfos(<?= $serie->getIdentifiant() ?>)">
+                            <img src='../../ressources/posts/<?= $serie->getImage() ?>' alt=''>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </div>
     </section>
@@ -68,7 +96,6 @@
             </div>
         </div>
     </div>
-
     <script>
         function redirectToSerieInfos(id) {
             window.location.href = 'serie_infos.php?id=' + id;

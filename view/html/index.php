@@ -6,10 +6,14 @@ require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
 use model\dao\requests\SerieRequest;
 
 session_start();
-if (!isset($_SESSION['login'])) {
+if (!isset($_SESSION['login'], $_GET['profile'])) {
     session_destroy();
     header("Location: login.php");
     exit();
+}
+
+if (!isset($_SESSION['profile'])) {
+    $_SESSION['profile'] = $_GET['profile'];
 }
 
 $serieRequest = new SerieRequest();
@@ -39,8 +43,8 @@ $top_tendance = array_slice($series, 6, 8);
     </div>
     <div class="menu">
         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Votre liste</a></li>
+            <li><a href="">Accueil</a></li>
+            <li><a href="favorite.php">Votre liste</a></li>
             <li><a href="explore.php">Explorer</a></li>
             <li><a href="login.php">Déconnexion</a></li>
         </ul>

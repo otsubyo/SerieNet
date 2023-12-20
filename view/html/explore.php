@@ -72,7 +72,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>SCIENCE FICTION</h2>
         <div class="box-container">
             <?php foreach ($science_fiction as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             } ?>
@@ -86,7 +86,7 @@ $romance = $serieRequest->getSeriesByGenre("Romance",false); shuffle($romance);
         <h2>THRILLER</h2>
         <div class="box-container">
             <?php foreach ($action as $serie) {
-                echo "<div class='box'>";
+                echo "<div class='box' onclick='redirectToSerieInfos(" . $serie->getIdentifiant() . ")'>";
                 echo "<img src='../../ressources/posts/" . $serie->getImage() ."' alt=''>";
                 echo "</div>";
             } ?>

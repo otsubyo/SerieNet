@@ -49,7 +49,7 @@ class SerieRequest
         $stmt->execute(array(':id' => $id));
         (array) $data = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!$data) {
-            throw new \Exception("ERROR 404 : Données introuvable !");
+            die("ERROR 404 (Serie) : Données introuvable !");
         }
         $genres = $this->getGenresSerie($id);
         return new Serie($data['id'], $data['name'], $genres, $data['etoiles'], $data['synopsis'], $data['poster']);

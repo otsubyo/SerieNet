@@ -1,10 +1,12 @@
 <?php
 namespace view\html;
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
+require_once (__DIR__ . "/../../model/dao/requests/FavorisRequest.php");
 
 
 use Exception;
 use model\dao\requests\SerieRequest;
+use model\dao\requests\FavorisRequest;
 
 session_start();
 if (!isset($_SESSION['login'])) {
@@ -14,6 +16,8 @@ if (!isset($_SESSION['login'])) {
 }
 
 $serieRequest = new SerieRequest();
+$favorisRequest = new FavorisRequest();
+
 $serie = null;
 if (isset($_GET['id'])) {
     try {
@@ -23,6 +27,26 @@ if (isset($_GET['id'])) {
     }
 } else {
     exit();
+}
+$typeInput = "submit";
+$disabled = "";
+$buttonValue = "Ajouter à ma liste";
+
+if ($favorisRequest->isFavoris($_SESSION['profile'], $serie->getIdentifiant())) {
+    $typeInput = "reset";
+    $disabled = "disabled";
+    $buttonValue = "Disponible dans votre liste";
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['add'])) {
+        $value = $_POST['add'];
+        if ($favorisRequest->addFavoris($_SESSION['profile'], $value)) {
+            $buttonValue = "Disponible dans votre liste";
+        }
+        $typeInput = "reset";
+        //header("location: serie_infos.php?id=" . $serie->getIdentifiant());
+    }
 }
 
 
@@ -41,12 +65,12 @@ if (isset($_GET['id'])) {
 <body>
 <div class="navigation-bar">
     <div class="logo">
-        <a href="index.php" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
+        <a href="index.php?profile=<?= $_SESSION['profile'] ?>" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
     </div>
     <div class="menu">
         <ul>
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="#">Votre liste</a></li>
+            <li><a href="index.php?profile=<?= $_SESSION['profile'] ?>">Accueil</a></li>
+            <li><a href="favorite.php">Votre liste</a></li>
             <li><a href="explore.php">Explorer</a></li>
             <li><a href="login.php">Déconnexion</a></li>
         </ul>
@@ -74,8 +98,13 @@ if (isset($_GET['id'])) {
 
         <!-- Bouton pour ajouter la série à la liste -->
         <div class="serie-infos-btn">
-            <button type="button" class="btn">Ajouter à ma liste</button>
-            <button type="button" class="btn">Retour</button>
+            <form action="" method="post">
+                <input type="hidden" name="add" value=<?= $serie->getIdentifiant() ?>>
+                <button type="<?= $typeInput ?>" class="btn" <?= $disabled ?>>
+                    <?= $buttonValue ?>
+                </button>
+            </form>
+
         </div>
     </div>
 

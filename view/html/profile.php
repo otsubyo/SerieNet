@@ -45,11 +45,12 @@ $i = 0;
     <div class="team-profile">
         <div class="profile-container">
             <?php foreach ($profiles as $profile) { ?>
-                <a href="index.php" class="profile-card">
+                <a href="index.php?profile=<?= $profile->getIdProfil() ?>" class="profile-card">
                     <img src="../../ressources/images/<?= $images[$i] ?>" alt="profile picture">
                     <h3><?= $profile->getNom() ?></h3>
                 </a>
-                <?php $i++; ?>
+                <?php $i++;
+                ?>
             <?php } ?>
         </div>
     </div>

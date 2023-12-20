@@ -2,11 +2,8 @@
 namespace model\dao\requests;
 
 require_once(__DIR__ . "/../../dao/Database.php");
-use model\Serie;
 use PDO;
-use function libs\deliverResponse;
 use model\dao\Database;
-use model\dao\requests\SerieRequest;
 
 class GenreRequest
 {
