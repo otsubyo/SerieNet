@@ -33,7 +33,7 @@ class SerieRequest
         $stmt->execute(array(':id' => $serieID));
         (array) $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (!$data) {
-            die("ERROR 404 : Données introuvable !");
+            exit("ERROR 404 : Données introuvable !");
         }
         $genres = array();
         foreach ($data as $row) {
@@ -49,7 +49,7 @@ class SerieRequest
         $stmt->execute(array(':id' => $id));
         (array) $data = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!$data) {
-            die("ERROR 404 (Serie) : Données introuvable !");
+            exit("ERROR 404 (Serie) : Données introuvable !");
         }
         $genres = $this->getGenresSerie($id);
         return new Serie($data['id'], $data['name'], $genres, $data['etoiles'], $data['synopsis'], $data['poster']);
@@ -60,7 +60,7 @@ class SerieRequest
         // Construire l'URL de l'API Flask
         $encodedId = urlencode($id);
         if (!in_array($lang, array('VF', 'VO'))) {
-            die('Erreur : la langue doit être VF ou VO.');
+            exit('Erreur : la langue doit être VF ou VO.');
         }
         $apiUrl = "http://localhost:5000/search?id=$encodedId&lang=$lang";
 
@@ -69,7 +69,7 @@ class SerieRequest
 
         // Vérifier si la requête a réussi
         if ($response === false) {
-            die('Erreur lors du requêtage de l\'API SerieNet.');
+            exit('Erreur lors du requêtage de l\'API SerieNet.');
         }
 
         // Décoder la réponse JSON
@@ -94,12 +94,12 @@ class SerieRequest
         return $series;
     }
 
-    /*
+    /**
      * Retourne les séries correspondant à un genre donné
      * @param string $genre
      * @return array
      */
-    public function getSeriesByGenre(string $genre, $toarray=true): array
+    public function getSeriesByGenre(string $genre, $toarray = true): array
     {
         $sql = "SELECT serie.id FROM serie
                          JOIN serie_genre ON serie.id = serie_genre.serie_id
@@ -109,7 +109,7 @@ class SerieRequest
         $stmt->execute(array(':genre' => $genre));
         (array) $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (!$data) {
-            die("ERROR 404 : Données introuvable !");
+            exit("ERROR 404 : Données introuvable !");
         }
 
         $series = array();
@@ -133,7 +133,7 @@ class SerieRequest
         $stmt->execute();
         (array) $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (!$data) {
-            die("ERROR 404 : Données introuvable !");
+            exit("ERROR 404 : Données introuvable !");
         }
 
         $series = array();

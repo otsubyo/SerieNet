@@ -29,7 +29,7 @@ class FavorisRequest
         $stmt->execute(array(':id' => $id));
         (array) $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (!$data) {
-            die("ERROR 404 : Données introuvable !");
+            exit("ERROR 404 : Données introuvable !");
         }
         $series = array();
         $serieRequest = new SerieRequest();
@@ -42,7 +42,7 @@ class FavorisRequest
 
     /**
      * Ajoute une série à la liste de l'utilisateur
-     * @param $id
+     * @param $id_profil
      * @param $id_serie
      * @return bool
      */
@@ -55,7 +55,7 @@ class FavorisRequest
 
     /**
      * Supprime une série de la liste de l'utilisateur
-     * @param $id
+     * @param $id_profil
      * @param $id_serie
      * @return bool
      */
@@ -68,7 +68,7 @@ class FavorisRequest
 
     /**
      * Vérifie si une série est dans la liste de l'utilisateur
-     * @param $id
+     * @param $id_profil
      * @param $id_serie
      * @return bool
      */

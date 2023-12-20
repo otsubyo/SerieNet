@@ -6,5 +6,5 @@ function redirectToPage() {
 }
 
 function redirectToSerieInfos(id) {
-    window.location.href = 'serie_infos.php?id=' + id;
+    window.location.href = 'serie-infos.php?id=' + id;
 }

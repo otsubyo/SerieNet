@@ -39,13 +39,13 @@ $top_tendance = array_slice($series, 6, 8);
 <body>
 <div class="navigation-bar">
     <div class="logo">
-        <a href="index.php" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
+        <a href="" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
     </div>
     <div class="menu">
         <ul>
             <li><a href="">Accueil</a></li>
-            <li><a href="favorite.php">Votre liste</a></li>
-            <li><a href="explore.php">Explorer</a></li>
+            <li><a href="liste-favoris.php">Votre liste</a></li>
+            <li><a href="explorer.php">Explorer</a></li>
             <li><a href="login.php">Déconnexion</a></li>
         </ul>
     </div>
@@ -112,7 +112,7 @@ $top_tendance = array_slice($series, 6, 8);
 </body>
 <script>
     function redirectToSerieInfos(id) {
-        window.location.href = 'serie_infos.php?id=' + id;
+        window.location.href = 'serie-infos.php?id=' + id;
     }
 </script>
 <script src="../js/script.js"></script>

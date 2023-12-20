@@ -41,7 +41,7 @@ if (isset($_POST['btn-validate'])) {
         $_SESSION['login'] = $user->getIdentifiant();
         $_SESSION['start_time'] = time();
         $_SESSION['token'] = get_bearer_token();
-        header("Location: profile.php");
+        header("Location: select-profile.php");
         exit();
     } else {
         echo "Erreur de connexion";

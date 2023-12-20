@@ -1,7 +1,14 @@
 <?php
 namespace view\html;
-require_once(__DIR__ . "/../../model/dao/requests/FavorisRequest.php");
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require_once(__DIR__ . "/../../model/dao/requests/FavorisRequest.php");
+require_once (__DIR__ . "/../../model/dao/Recommandations.php");
+
+use model\dao\Recommandations;
 use model\dao\requests\FavorisRequest;
 
 session_start();
@@ -12,6 +19,7 @@ if (!isset($_SESSION['login'])) {
 }
 
 $serieRequest = new FavorisRequest();
+$recommandations = new Recommandations();
 
 if ($serieRequest->hasFavoris($_SESSION['profile'])) {
     $seriesMaListe = $serieRequest->getFavoris($_SESSION['profile']);
@@ -19,7 +27,7 @@ if ($serieRequest->hasFavoris($_SESSION['profile'])) {
     $seriesMaListe = array();
 }
 
-
+$seriesRecommandees = $recommandations->getRecommandationsSeries($_SESSION['profile']);
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +51,7 @@ if ($serieRequest->hasFavoris($_SESSION['profile'])) {
             <ul>
                 <li><a href="index.php?profile=<?= $_SESSION['profile'] ?>">Accueil</a></li>
                 <li><a href="ma_liste.php">Votre liste</a></li>
-                <li><a href="explore.php">Explorer</a></li>
+                <li><a href="explorer.php">Explorer</a></li>
                 <li><a href="login.php">Déconnexion</a></li>
             </ul>
         </div>
@@ -70,10 +78,10 @@ if ($serieRequest->hasFavoris($_SESSION['profile'])) {
 
     <section class="ma-liste-content">
         <div class="banner-content">
-            <h2><span class="red-text">Vos</span> recommandations</h2>
+            <h2><span class="red-text">Vos</span> recommandations (en fonction de vos recherches et favoris)</h2>
             <div class="box-container">
-                <?php if (!empty($seriesMaListe)): ?>
-                    <?php foreach ($seriesMaListe as $serie): ?>
+                <?php if (!empty($seriesRecommandees)): ?>
+                    <?php foreach ($seriesRecommandees as $serie): ?>
                         <div class='box' onclick="redirectToSerieInfos(<?= $serie->getIdentifiant() ?>)">
                             <img src='../../ressources/posts/<?= $serie->getImage() ?>' alt=''>
                         </div>
@@ -98,7 +106,7 @@ if ($serieRequest->hasFavoris($_SESSION['profile'])) {
     </div>
     <script>
         function redirectToSerieInfos(id) {
-            window.location.href = 'serie_infos.php?id=' + id;
+            window.location.href = 'serie-infos.php?id=' + id;
         }
     </script>
     <script src="../js/script.js"></script>

@@ -1,5 +1,6 @@
 <?php
 namespace view\html;
+
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
 require_once (__DIR__ . "/../../model/dao/requests/FavorisRequest.php");
 
@@ -28,24 +29,31 @@ if (isset($_GET['id'])) {
 } else {
     exit();
 }
-$typeInput = "submit";
-$disabled = "";
+
+$name = 'add';
 $buttonValue = "Ajouter à ma liste";
 
+// Si la série est déjà dans la liste, on change le bouton
 if ($favorisRequest->isFavoris($_SESSION['profile'], $serie->getIdentifiant())) {
-    $typeInput = "reset";
-    $disabled = "disabled";
-    $buttonValue = "Disponible dans votre liste";
+    $buttonValue = "Retirer de ma liste";
+    $name = 'remove';
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['add'])) {
         $value = $_POST['add'];
         if ($favorisRequest->addFavoris($_SESSION['profile'], $value)) {
-            $buttonValue = "Disponible dans votre liste";
+            $buttonValue = "Retirer de ma liste";
+            $name = 'remove';
         }
-        $typeInput = "reset";
-        //header("location: serie_infos.php?id=" . $serie->getIdentifiant());
+    }
+
+    if (isset($_POST['remove'])) {
+        $value = $_POST['remove'];
+        if ($favorisRequest->deleteFavoris($_SESSION['profile'], $value)) {
+            $buttonValue = "Ajouter à ma liste";
+            $name = 'add';
+        }
     }
 }
 
@@ -70,8 +78,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="menu">
         <ul>
             <li><a href="index.php?profile=<?= $_SESSION['profile'] ?>">Accueil</a></li>
-            <li><a href="favorite.php">Votre liste</a></li>
-            <li><a href="explore.php">Explorer</a></li>
+            <li><a href="liste-favoris.php">Votre liste</a></li>
+            <li><a href="explorer.php">Explorer</a></li>
             <li><a href="login.php">Déconnexion</a></li>
         </ul>
     </div>
@@ -99,12 +107,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Bouton pour ajouter la série à la liste -->
         <div class="serie-infos-btn">
             <form action="" method="post">
-                <input type="hidden" name="add" value=<?= $serie->getIdentifiant() ?>>
-                <button type="<?= $typeInput ?>" class="btn" <?= $disabled ?>>
+                <input type="hidden" name="<?= $name ?>" value=<?= $serie->getIdentifiant() ?>>
+                <button type="submit" class="btn">
                     <?= $buttonValue ?>
                 </button>
             </form>
-
         </div>
     </div>
 
