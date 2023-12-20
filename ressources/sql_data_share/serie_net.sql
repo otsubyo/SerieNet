@@ -49,11 +49,11 @@ DROP TABLE IF EXISTS `historique_recherche`;
 CREATE TABLE `historique_recherche` (
   `id` int NOT NULL AUTO_INCREMENT,
   `profile_id` int NOT NULL,
-  `terme_recherche` varchar(255) DEFAULT NULL,
-  `date_recherche` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `terme_recherche` varchar(255) NOT NULL,
+  `date_recherche` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `utilisateur_id` (`profile_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -62,6 +62,7 @@ CREATE TABLE `historique_recherche` (
 
 LOCK TABLES `historique_recherche` WRITE;
 /*!40000 ALTER TABLE `historique_recherche` DISABLE KEYS */;
+INSERT INTO `historique_recherche` VALUES (1,4,'tardis','2023-12-20 21:19:14'),(2,4,'avion île crash','2023-12-20 22:24:51'),(3,5,'tardis','2023-12-20 23:21:15'),(4,5,'flash','2023-12-20 23:21:36');
 /*!40000 ALTER TABLE `historique_recherche` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,6 +140,7 @@ CREATE TABLE `serie_favori` (
 
 LOCK TABLES `serie_favori` WRITE;
 /*!40000 ALTER TABLE `serie_favori` DISABLE KEYS */;
+INSERT INTO `serie_favori` VALUES (4,15),(4,51),(4,65),(4,83),(7,28),(7,40);
 /*!40000 ALTER TABLE `serie_favori` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -200,4 +202,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-08 19:11:51
+-- Dump completed on 2023-12-21  0:27:10
