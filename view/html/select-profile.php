@@ -6,7 +6,6 @@ require_once(__DIR__ . "/../../libs/jwt-utils.php");
 require_once(__DIR__ . "/../../model/dao/requests/ProfilRequest.php");
 
 use model\dao\requests\ProfilRequest;
-use model\dao\requests\UserRequest;
 
 session_start();
 if (!isset($_SESSION['login'])) {

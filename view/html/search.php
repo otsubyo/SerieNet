@@ -19,7 +19,6 @@ if (!isset($_SESSION['login'])) {
     exit();
 }
 
-
 $serieRequest = new SerieRequest();
 $historiqueRequest = new HistoriqueRequest();
 

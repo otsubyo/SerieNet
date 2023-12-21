@@ -50,7 +50,7 @@ $seriesRecommandees = $recommandations->getRecommandationsSeries($_SESSION['prof
         <div class="menu">
             <ul>
                 <li><a href="accueil.php?profile=<?= $_SESSION['profile'] ?>">Accueil</a></li>
-                <li><a href="ma_liste.php">Votre liste</a></li>
+                <li><a href="">Votre liste</a></li>
                 <li><a href="explorer.php">Explorer</a></li>
                 <li><a href="login.php">Déconnexion</a></li>
             </ul>
