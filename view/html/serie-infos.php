@@ -73,11 +73,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <div class="navigation-bar">
     <div class="logo">
-        <a href="index.php?profile=<?= $_SESSION['profile'] ?>" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
+        <a href="accueil.php?profile=<?= $_SESSION['profile'] ?>" style="text-decoration: none"><span class="logo">Serie</span><span class="logo1">.Net</span></a>
     </div>
     <div class="menu">
         <ul>
-            <li><a href="index.php?profile=<?= $_SESSION['profile'] ?>">Accueil</a></li>
+            <li><a href="accueil.php?profile=<?= $_SESSION['profile'] ?>">Accueil</a></li>
             <li><a href="liste-favoris.php">Votre liste</a></li>
             <li><a href="explorer.php">Explorer</a></li>
             <li><a href="login.php">Déconnexion</a></li>

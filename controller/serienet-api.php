@@ -11,12 +11,17 @@ use model\dao\requests\SerieRequest;
 use function libs\deliverResponse;
 
 $serieRequest = new SerieRequest();
-
 $http_method = $_SERVER['REQUEST_METHOD'];
+
+$GET = 'GET';
+$POST = 'POST';
+$PUT = 'PUT';
+$DELETE = 'DELETE';
 
 switch ($http_method) {
     // Cas de la méthode GET
-    case "GET":
+    case $GET:
+        // Cas de la recherche par id
         if (isset($_GET['id'], $_GET['lang'])) {
             $id = htmlspecialchars($_GET['id']);
             $lang = htmlspecialchars($_GET['lang']);
@@ -43,7 +48,7 @@ switch ($http_method) {
         }
         break;
     // Cas de la méthode POST
-    case "POST":
+    case $POST:
         deliverResponse(500, "Requete non implementee", null);
 
 }

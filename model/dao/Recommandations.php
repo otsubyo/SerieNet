@@ -10,14 +10,9 @@ require_once __DIR__ . "/../../model/dao/requests/SerieRequest.php";
 require_once __DIR__ . "/../../model/dao/requests/FavorisRequest.php";
 require_once __DIR__ . "/../../model/Historique.php";
 
-use model\dao\requests\GenreRequest;
 use model\dao\requests\HistoriqueRequest;
-use model\dao\requests\ProfilRequest;
 use model\dao\requests\SerieRequest;
 use model\dao\requests\FavorisRequest;
-use model\Historique;
-use model\Serie;
-use PDO;
 
 class Recommandations
 {

@@ -107,16 +107,11 @@
   margin: 20px 0;
   font-family: 'Poppins',sans-serif;
 }
-.links{
-  display: flex;
-  cursor: pointer;
-  color: white;
-  margin: 0 0 20px 0;
-}
 
 .links i{
   font-size: 17px;
 }
+
 i span{
   margin-left: 8px;
   font-weight: 500;

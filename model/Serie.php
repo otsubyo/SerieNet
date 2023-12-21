@@ -72,8 +72,7 @@ class Serie
         foreach ($this->genres as $genre) {
             $genres .= $genre->getNom() . ",";
         }
-        $genres = substr($genres, 0, -1);
-        return $genres;
+        return substr($genres, 0, -1);
     }
 
     /**

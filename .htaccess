@@ -2,17 +2,21 @@
     RewriteEngine On
     RewriteBase /
 
-    # Rediriger "/view/html/login.php" vers "/view/html/login"
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)\.php$ /$1 [L,QSA]
+    # Rediriger vers la page de connexion si l'utilisateur arrive dans /view/html/ ou /view/html
+    RewriteRule ^view/html/?$ view/html/login.php [L]
+    RewriteRule ^view/html/login?$ /view/html/login.php [L]
 
-    # Rediriger "/view/html/login" vers "/view/html/login.php" en interne
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} !\.php$
-    RewriteRule ^(.*)$ $1.php [L,QSA]
+    # Rediriger vers la page d'accueil si l'utilisateur arrive dans /view/html/home ou /view/html/home/
+    RewriteRule ^view/html/home/?$ view/html/accueil.php [L]
+    RewriteRule ^view/html/home?$ /view/html/accueil.php [L]
+
+    # Rediriger vers la page de sélection de profil si l'utilisateur arrive dans /view/html/profile ou /view/html/profile/
+    RewriteRule ^view/html/profile/?$ view/html/select-profile.php [L]
+    RewriteRule ^view/html/profile?$ /view/html/select-profile.php [L]
 </IfModule>
+
+
+
 
 
 

@@ -25,12 +25,12 @@ $historiqueRequest = new HistoriqueRequest();
 
 $series = array();
 
-if (isset($_GET['search'])) {
-    $search = $_GET['search'];
-    $series = $serieRequest->getSeriesSearch($search, "VF", false);
+if (isset($_GET['search'], $_GET['langue'])) {
+    $search = htmlspecialchars($_GET['search']);
+    $lang = htmlspecialchars($_GET['langue']);
+    $series = $serieRequest->getSeriesSearch($search, $lang, false);
     $historiqueRequest->insertHistoriqueRecherche($_SESSION['profile'], $search);
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +51,7 @@ if (isset($_GET['search'])) {
     </div>
     <div class="menu">
         <ul>
-            <li><a href="index.php?profile=<?= $_SESSION['profile'] ?>">Accueil</a></li>
+            <li><a href="accueil.php?profile=<?= $_SESSION['profile'] ?>">Accueil</a></li>
             <li><a href="liste-favoris.php">Votre liste</a></li>
             <li><a href="explorer.php">Explorer</a></li>
             <li><a href="login.php">Déconnexion</a></li>
@@ -66,6 +66,16 @@ if (isset($_GET['search'])) {
         <label>
             <input type="search" name="search" onsubmit="return redirectToPage()" placeholder=" Rechercher une autre série..." required>
         </label>
+        <div id="select-lang">
+            <div>
+                <input type="radio" id="html" name="langue" value="VF" required>
+                <label for="html">Français</label>
+            </div>
+            <div>
+                <input type="radio" id="css" name="langue" value="VO" required>
+                <label for="css">Anglais</label>
+            </div>
+        </div>
     </form>
 </section>
 

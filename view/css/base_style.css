@@ -63,6 +63,15 @@ span{
     color: var(--main-color);
 }
 
+/* Radio Button */
+#select-lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
 
 
 .navigation-bar .menu li{
@@ -292,31 +301,6 @@ span{
     color: white;
     padding: 1%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

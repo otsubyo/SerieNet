@@ -9,7 +9,13 @@ function generate_jwt($headers, $payload, $secret = 'crococarl'): string
     return "$headers_encoded.$payload_encoded.$signature_encoded";
 }
 
-function is_jwt_valid($jwt, $secret='crococarl'): bool
+/**
+ * Vérifie si le JWT est valide
+ * @param $jwt
+ * @param string $secret
+ * @return bool
+ */
+function is_jwt_valid($jwt, string $secret='crococarl'): bool
 {
     // split the jwt
     $tokenParts = explode('.', $jwt);

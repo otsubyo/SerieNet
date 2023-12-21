@@ -6,6 +6,7 @@ ini_set('display_errors', 'On');
 
 require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../libs/jwt-utils.php");
+
 use model\dao\requests\UserRequest;
 
 session_start();
@@ -32,10 +33,10 @@ if (isset($_POST['btn-validate'])) {
         false,
         stream_context_create(array('http' => array('method' => 'POST',
             'content' => $data_string,
-            'header' => array('Content-Type: application/json'."\r\n"
-                .'Content-Length: '.strlen($data_string)."\r\n"))))
-        );
-        $receveid_data = json_decode($result, true);
+            'header' => array('Content-Type: application/json' . "\r\n"
+                . 'Content-Length: ' . strlen($data_string) . "\r\n"))))
+    );
+    $receveid_data = json_decode($result, true);
 
     if ($receveid_data['status'] == 200) {
         $_SESSION['login'] = $user->getIdentifiant();
@@ -83,7 +84,6 @@ if (isset($_POST['btn-validate'])) {
                 <input type="submit" value="CONNEXION" name="btn-validate">
             </div>
         </form>
-
         <div class="signup">
             Pas encore membre ?
             <a href="#">S'inscrire maintenant</a>
