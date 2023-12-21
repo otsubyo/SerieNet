@@ -25,9 +25,13 @@ $historiqueRequest = new HistoriqueRequest();
 
 $series = array();
 
-if (isset($_GET['search'], $_GET['langue'])) {
+if (isset($_GET['search'])) {
     $search = htmlspecialchars($_GET['search']);
-    $lang = htmlspecialchars($_GET['langue']);
+    if (isset($_GET['langue']))
+        $lang = htmlspecialchars($_GET['langue']);
+    else
+        $lang = "VF";
+
     $series = $serieRequest->getSeriesSearch($search, $lang, false);
     $historiqueRequest->insertHistoriqueRecherche($_SESSION['profile'], $search);
 }
