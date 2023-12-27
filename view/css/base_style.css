@@ -271,6 +271,7 @@ span{
     border-radius: 0;
     width: 500px;
     box-sizing: border-box;
+    background-color: white;
 }
 
 .pied {
