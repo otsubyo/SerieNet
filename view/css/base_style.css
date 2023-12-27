@@ -134,7 +134,9 @@ span{
 
 .banner .banner-content{
     position: absolute;
-    top: 15%;
+    width: 100%;
+    top: 10%;
+    background-color: transparent;
 }
 
 .banner .banner-content h2{
@@ -145,6 +147,7 @@ span{
     letter-spacing: 2px;
     color: var(--main-color);
     padding: 2%;
+    background-color: transparent;
 }
 
 .banner .banner-content p{
@@ -153,6 +156,8 @@ span{
     font-weight: 300;
     color: white;
     padding: 2%;
+    background-color: transparent;
+
 }
 
 .btn{
