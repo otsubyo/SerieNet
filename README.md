@@ -1,7 +1,5 @@
 # SERIE NET
 
----
-
 <img  style="margin: 0 10px 0;" alt="" src="./ressources/images/sn_logo.png">
 
 ## Description
