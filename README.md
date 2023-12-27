@@ -12,6 +12,8 @@
 * **[Sommaire](#sommaire)**
 * **[Informations](#informations)**
 * **[Fonctionnalités](#fonctionnalités)**
+* **[Auteurs](#auteurs)**
+* **[Crédits](#crédits)**
 
 
 ## Informations
