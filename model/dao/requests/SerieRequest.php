@@ -52,7 +52,7 @@ class SerieRequest
             exit("ERROR 404 (Serie) : Données introuvable !");
         }
         $genres = $this->getGenresSerie($id);
-        return new Serie($data['id'], $data['name'], $genres, $data['etoiles'], $data['synopsis'], $data['poster']);
+        return new Serie($data['id'], $data['name'], $genres, (float)$data['etoiles'], $data['synopsis'], $data['poster']);
     }
 
     public function getSeriesSearch($id, $lang = "VF", $toarray=true): array
@@ -97,9 +97,10 @@ class SerieRequest
     /**
      * Retourne les séries correspondant à un genre donné
      * @param string $genre
+     * @param bool $toarray
      * @return array
      */
-    public function getSeriesByGenre(string $genre, $toarray = true): array
+    public function getSeriesByGenre(string $genre, bool $toarray = true): array
     {
         $sql = "SELECT serie.id FROM serie
                          JOIN serie_genre ON serie.id = serie_genre.serie_id
