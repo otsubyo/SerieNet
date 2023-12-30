@@ -8,12 +8,15 @@ require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
 require_once(__DIR__ . "/../../model/dao/requests/HistoriqueRequest.php");
 require_once(__DIR__ . "/../../model/Serie.php");
+require_once(__DIR__ . "/../../libs/jwt-utils.php");
 
 use model\dao\requests\SerieRequest;
 use model\dao\requests\HistoriqueRequest;
+use function is_jwt_valid;
 
 session_start();
-if (!isset($_SESSION['login'])) {
+// Vérification de la validité du token et de la session de connexion
+if (!isset($_SESSION['token']) || !is_jwt_valid($_SESSION['token']) || !isset($_SESSION['login'])) {
     session_destroy();
     header("Location: login.php");
     exit();
@@ -30,7 +33,6 @@ if (isset($_GET['search'])) {
         $lang = htmlspecialchars($_GET['langue']);
     else
         $lang = "VF";
-
     $series = $serieRequest->getSeriesSearch($search, $lang, false);
     $historiqueRequest->insertHistoriqueRecherche($_SESSION['profile'], $search);
 }

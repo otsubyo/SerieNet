@@ -4,15 +4,20 @@ namespace view\html;
 require_once(__DIR__ . "/../../model/dao/requests/UserRequest.php");
 require_once(__DIR__ . "/../../model/dao/requests/SerieRequest.php");
 require_once(__DIR__ . "/../../model/Serie.php");
+require_once(__DIR__ . "/../../libs/jwt-utils.php");
 
 use model\dao\requests\SerieRequest;
+use function is_jwt_valid;
 
 session_start();
-if (!isset($_SESSION['login'])) {
+
+// Vérification de la validité du token et de la session de connexion
+if (!isset($_SESSION['token']) || !is_jwt_valid($_SESSION['token']) || !isset($_SESSION['login'])) {
     session_destroy();
     header("Location: login.php");
     exit();
 }
+
 
 $serieRequest = new SerieRequest();
 

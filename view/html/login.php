@@ -41,7 +41,7 @@ if (isset($_POST['btn-validate'])) {
     if ($receveid_data['status'] == 200) {
         $_SESSION['login'] = $user->getIdentifiant();
         $_SESSION['start_time'] = time();
-        $_SESSION['token'] = get_bearer_token();
+        $_SESSION['token'] = $receveid_data['data'];
         header("Location: select-profile.php");
         exit();
     } else {

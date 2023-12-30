@@ -6,18 +6,18 @@ require_once(__DIR__ . "/../../libs/jwt-utils.php");
 require_once(__DIR__ . "/../../model/dao/requests/ProfilRequest.php");
 
 use model\dao\requests\ProfilRequest;
+use function is_jwt_valid;
 
 session_start();
-if (!isset($_SESSION['login'])) {
+// Vérification de la validité du token et de la session de connexion
+if (!isset($_SESSION['token']) || !is_jwt_valid($_SESSION['token']) || !isset($_SESSION['login'])) {
     session_destroy();
     header("Location: login.php");
     exit();
 }
 
-$user = $_SESSION['login'];
-
 $userRequest = new ProfilRequest();
-$profiles = $userRequest->getProfils($user);
+$profiles = $userRequest->getProfils($_SESSION['login']);
 
 $images = array("blue.jpg", "red.jpg", "green.jpg");
 shuffle($images);

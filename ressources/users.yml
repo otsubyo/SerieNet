@@ -1,9 +1,7 @@
----
-identifiant connexion :
-    - identifiant : julien_broisin
-        - mot de passe : $iutinfo
-    - identifiant : carl
-        - mot de passe : iutinfo4
-    - identifiant : amdjad
-        - mot de passe : 9dfe351b
----
+identifiant_connexion:
+    - identifiant: julien_broisin
+      mot_de_passe: $iutinfo
+    - identifiant: carl
+      mot_de_passe: iutinfo4
+    - identifiant: amdjad
+      mot_de_passe: 9dfe351b

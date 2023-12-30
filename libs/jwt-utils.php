@@ -64,6 +64,10 @@ function get_authorization_header(): ?string
     return $headers;
 }
 
+/**
+ * Retourne le token JWT
+ * @return string|null
+ */
 function get_bearer_token(): ?string
 {
     $headers = get_authorization_header();
