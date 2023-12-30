@@ -28,6 +28,7 @@
 * **Base de données :** MySQL
 * **Serveur :** Apache
 * **API FLASK:** [serieNet API](https://github.com/Maxiwere45/seriesNet)
+* **Modèle de conception :** [MVC](https://fr.wikipedia.org/wiki/Mod%C3%A8le-vue-contr%C3%B4leur)
 
 ### Fonctionnent en interne
   
@@ -36,8 +37,10 @@
 
 Lorsque l'utilisateur effectue une recherche, l'application PHP envoie une requête
 au serveur Flask qui va effectuer une recherhe avec l'algorithme TF-IDF sur les données vectorisées [SOUS-TITRES]. 
-Le serveur Flask va ensuite renvoyer les résultats en JSON à l'application PHP qui va effectuer une recherche 
+Le serveur Flask va ensuite renvoyer les résultats (des identifiants*) en JSON à l'application PHP qui va effectuer une recherche 
 dans la base de données MySQL pour récupérer les informations des séries TV et les afficher à l'utilisateur.
+
+* **Identifiant :** Numéro unique permettant d'identifier une série TV dans la base de données (les séries sont triés par ordre alphabétique)
 
 ## Fonctionnalités
 
@@ -80,4 +83,4 @@ dans la base de données MySQL pour récupérer les informations des séries TV 
 ## Crédits
 
 Ce projet a été réalisé dans le cadre d'un projet scolaire à l'[IUT PAUL SABATIER de Toulouse](https://iut.univ-tlse3.fr/) pour l'année 2023-2024 dans le
-parcour [Administration, gestion et exploitation des bases de données](https://iut.univ-tlse3.fr/but-informatique-parcours-administration-gestion-et-exploitation-des-donnees-toulouse) (AGED).
+parcours [Administration, gestion et exploitation des bases de données](https://iut.univ-tlse3.fr/but-informatique-parcours-administration-gestion-et-exploitation-des-donnees-toulouse) (AGED).
