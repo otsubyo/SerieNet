@@ -1,6 +1,6 @@
 # Instruction pour l'installation de l'application web
 
-<img src="./ressources/images/arrow.png" alt="serieNet" width="150"/>
+<img src="./ressources/images/arrow.png" alt="serieNet" width="110"/>
 
 ## Sommaire
 
@@ -21,6 +21,8 @@
 * **API FLASK:** [serieNet API](https://github.com/Maxiwere45/seriesNet)
 
 ## Installation
+
+* Si vous avez en possesion la VM **serieNet.ova**, lisez plutôt le fichier README.md situé au bureau de la VM.
 
 ### 1. Télécharger le projet
 
@@ -45,20 +47,10 @@ git clone [le lien du projet]
 sudo a2enmod rewrite
 ```
 
-* Créer un fichier de config **serieNet.conf** dans le dossier `sites-available` d'Apache avec le contenu suivant :
+* Créer un fichier de config **serieNet.conf** dans le dossier `sites-available` d'Apache avec la commande suivante :
 
-```shell
-<VirtualHost *:80>
-    ServerName serieNet
-    ServerAlias serieNet
-    DocumentRoot /var/www/serieNet
-    <Directory /var/www/serieNet>
-        Options Indexes FollowSymLinks MultiViews
-        AllowOverride All
-        Order allow,deny
-        allow from all
-    </Directory>
-</VirtualHost>
+```bash
+sudo cp /ressources/serieNet.conf /etc/apache2/sites-available/serieNet.conf
 ```
 
 * Activer le site **serieNet** avec la commande suivante :
