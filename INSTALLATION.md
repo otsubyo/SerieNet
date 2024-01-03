@@ -29,7 +29,7 @@
 * Télécharger le projet en cliquant sur le bouton vert **Code** puis **Download ZIP** ou en utilisant la commande suivante :
 
 ```bash
-git clone [le lien du projet]
+git clone https://github.com/otsubyo/SerieNet.git
 ```
 
 ### 2. Créer la base de données

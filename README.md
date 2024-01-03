@@ -13,7 +13,6 @@
 * **[Auteurs](#auteurs)**
 * **[Crédits](#crédits)**
 
-
 ## Informations
 
 * **Version :** 1.5.0
