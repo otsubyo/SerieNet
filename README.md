@@ -16,7 +16,7 @@
 ## Informations
 
 * **Version :** 1.5.0
-* **Dernière mise à jour :** 20/10/2021
+* **Dernière mise à jour :** 20/12/2023
 * **Langages utilisés :**
   * HTML5
   * CSS3
